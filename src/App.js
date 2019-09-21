@@ -1,5 +1,6 @@
 import React from 'react';
 import HomepageHeader from './HomepageHeader';
+import './scss/App.scss';
 
 
 const App = () => {
