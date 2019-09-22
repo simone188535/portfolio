@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+//Variables
+$font-family: 'Roboto', sans-serif;
+$font-weight-thin: 300;
+$font-weight-reg: 400;
+$font-weight-med: 500;
+$font-weight-bold: 600;
+$green:#58dcc1;
+$black: #343a40;
+$pale-peach:#F9F5F1;
+$orange: rgb(252, 75, 42);
+$dark-red:#a31e32;
+$red:#FF1717;
+
 *{
-    color: purple;
+    font-family: $font-family;
 }
+html{
+    font-size: 12px;
+}
+.page-bg-color{
+    // background: #EBEAE9;
+    background: $pale-peach;
+}
+.jumbo-head{
+    .header-thin{
+        font-weight: $font-weight-thin;
+        color: $black; 
+        font-size: 2rem;
+    }
+    .header-medium{
+        font-weight: $font-weight-med;
+        font-size: 4rem;
+    }
+    .primary-color-light{
+       color: $green;
+    }
+    .primary-dark-color{
+        color: $black; 
+    }
+    .header-text-container{
+        top:50%;
+        left: 0;
+    }
+    // background: url("../pablo-gentile-3MYvgsH1uK0-unsplash.jpg") center;
+    // background-size: cover;
+}
+
+
+// div{
+//     color: purple;
+// } 

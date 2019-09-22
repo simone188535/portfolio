@@ -1,21 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+// import { Tween, Timeline } from 'react-gsap';
 
-const HomepageHeader = () => {
+class HomepageHeader extends Component {
 
-    return (
-        <div className="row">
-            <div className=" col-12 bg-primary vh-100" >
-                <div className="container">
-                    <div className="text-center">
-                        <div className="text-uppercase">The portfolio of</div>
-                        <div>Simone</div>
-                        <div>Anthony</div>
-                        <div>Full Stack Web Developer</div>
+    // componentDidMount(){
+
+    // }
+    render() {
+        return (
+            <div className="row jumbo-head">
+                <div className=" col-12 vh-100" >
+                    <div className="container position-relative vh-100">
+                        <div className="text-align-left position-absolute header-text-container">
+                            <div className="header-thin primary-dark-color">Hello. My name is ...</div>
+                            <h1 className="header-medium primary-color-light">Simone Anthony</h1>
+                            <div className="header-medium primary-dark-color">Full Stack Web Developer.</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default HomepageHeader;
