@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 //Variables
-$font-family: 'Roboto', sans-serif;
+$font-family: 'Roboto', Arial, Helvetica, sans-serif;
 $font-weight-thin: 300;
 $font-weight-reg: 400;
 $font-weight-med: 500;
 $font-weight-bold: 600;
 $green:#58dcc1;
-$black: #343a40;
+$soft-black: #343a40;
+$black:#1c1b20;
 $pale-peach:#F9F5F1;
-$orange: rgb(252, 75, 42);
+$orange: rgb(252, 133, 36);
+// $vivid-orange:;
+$white: white;
 $dark-red:#a31e32;
 $red:#FF1717;
+$red-orange:rgb(255,87,81);
+$white: white;
+$off-white:#f8f8f8;
+$gold:rgb(253, 194, 45);
+$ultra-blue:#1D2B92;
+$beige: #ded5c4;
 
 *{
     font-family: $font-family;
@@ -19,35 +28,82 @@ $red:#FF1717;
 html{
     font-size: 12px;
 }
-.page-bg-color{
-    // background: #EBEAE9;
-    background: $pale-peach;
-}
-.jumbo-head{
-    .header-thin{
-        font-weight: $font-weight-thin;
-        color: $black; 
-        font-size: 2rem;
-    }
-    .header-medium{
-        font-weight: $font-weight-med;
-        font-size: 4rem;
-    }
+// .page-bg-color{
+//     // background: #EBEAE9;
+//     background: $pale-peach;
+// }
+.full-page{
+
     .primary-color-light{
-       color: $green;
+        color: $green;
     }
     .primary-dark-color{
         color: $black; 
     }
-    .header-text-container{
-        top:50%;
-        left: 0;
+    .header-thin{
+        font-weight: $font-weight-thin;
+        color: $black; 
     }
-    // background: url("../pablo-gentile-3MYvgsH1uK0-unsplash.jpg") center;
-    // background-size: cover;
-}
+    .header-medium{
+        font-weight: $font-weight-med;
+        
+    }
+    .white{
+        color:$white;
+    }
+    .primary-background{
+        // background: $orange;
+        // background: $green;
+        background: $red-orange;
+    }
+    .secondary-background{
+        // background:$off-white;
+        // background: $beige;
+        background: $pale-peach;
+    }
+    nav{
+        .nav-item{
+            color:$black;
+        }
+    }
+    footer{
+        background: $soft-black;
+        color: $white;
+    }
+    .home{
+        .jumbo-head{
+            .headline-thin{
+                font-size: 2rem;
+            }
+            .headline-med{
+                font-size: 4rem;
+            }
+            .header-img{
+                height: 350px;
+            }
+            .header-text-container{
+                top:35%;
+                left: 12%;
+            }
+            // background: url("../pablo-gentile-3MYvgsH1uK0-unsplash.jpg") center;
+            // background-size: cover;
+        }
+        .section-second{
+            background: $white;
+        }
+        .section-third{
+            background: $gold;
+        }
+        .section-fourth{
+            background: #e67b77;
+            // background: $orange;
+        }
+    }
+    
+    
+    // div{
+    //     color: purple;
+    // } 
+        
+    }
 
-
-// div{
-//     color: purple;
-// } 
