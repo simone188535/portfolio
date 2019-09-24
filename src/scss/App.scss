@@ -48,6 +48,40 @@ html{
         font-weight: $font-weight-med;
         
     }
+    .nav-background-light{
+        background: $white;
+        transition: background-color 1s ease-out;
+        
+        .nav-item.active .nav-link{
+            &:hover{
+                color: $black;
+            }
+            color: $black;
+        }
+        .nav-item .nav-link{
+            &:hover{
+                color:rgba(28,27,32,.5);
+            }
+            color:$soft-black;
+        }
+    }
+    .nav-background-dark{
+        background: $black;
+        transition: background-color 1s ease-out;
+
+        .nav-item.active .nav-link{
+            &:hover{
+                color: $white;
+            }
+            color: $white;
+        }
+        .nav-item .nav-link{
+            &:hover{
+                color:rgba(248,248,248,.8);
+            }
+            color: $off-white;
+        }
+    }
     .white{
         color:$white;
     }
@@ -61,11 +95,11 @@ html{
         // background: $beige;
         background: $pale-peach;
     }
-    nav{
-        .nav-item{
-            color:$black;
-        }
-    }
+    // nav{
+    //     .nav-item{
+    //         color:$black;
+    //     }
+    // }
     footer{
         background: $soft-black;
         color: $white;

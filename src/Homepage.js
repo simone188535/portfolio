@@ -1,17 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 // import stockImage from './assets/m-n-TgAqZAd9InA-unsplash.jpg';
-// import { Tween, Timeline } from 'react-gsap';
+import { Tween, Power3 } from 'react-gsap';
 
-class HomepageHeader extends Component {
+// class Homepage extends Component {
+    const Homepage = () => {
+
+    // simpleRef = createRef();
+    let logoItem = useRef(null);
 
     // componentDidMount(){
 
     // }
-    render() {
+    // render() {
         return (
             <div className="home">
                 <div className="container-fluid">
-                    <div className="row vh-100 jumbo-head">
+                    <div className="row vh-100 jumbo-head section-one">
                         <div className="col-md-6 h-100 primary-background">
                             <div className="text-align-left position-absolute header-text-container">
                                 <div className="header-thin primary-dark-color headline-thin">Hello. My name is ...</div>
@@ -56,7 +60,7 @@ class HomepageHeader extends Component {
                 </div>
             </div>
         );
-    }
+    // }
 }
 
-export default HomepageHeader;
+export default Homepage;

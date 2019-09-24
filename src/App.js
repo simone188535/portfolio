@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import HomepageHeader from './HomepageHeader';
+import Homepage from './Homepage';
 import Projects from './projects/Projects';
 import About from './about/About';
 import Contact from './contact/Contact';
@@ -15,7 +15,7 @@ const App = () => {
             <BrowserRouter>
             <GlobalNav />
                 <div>
-                    <Route path="/" exact component={HomepageHeader} />
+                    <Route path="/" exact component={Homepage} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
