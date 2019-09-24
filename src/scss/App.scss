@@ -95,16 +95,15 @@ html{
     }
     .secondary-background{
         // background:$off-white;
-        background: $soft-black;
-        // background: $pale-peach;
+        // background: $soft-black;
+        background: $pale-peach;
         #black-circle-to-bg{
-            // position: relative;
-            // top:50%;
-            // left: 40%;
-            // width:200px;
-            // height: 200px;
-            // border-radius:50%; 
-            // background: $soft-black;
+            top:50%;
+            left: 40%;
+            width:200px;
+            height: 200px;
+            border-radius:50%; 
+            background: $soft-black;
         }
         .header-box{
             width: 40%;
@@ -119,6 +118,7 @@ html{
             top:30%;
             left: 20%;
             z-index: 1;
+            display: none;
         }
         #mid-header-box{
             top:40%;
@@ -128,9 +128,10 @@ html{
             z-index: 3;
             // background: $vivid-orange;
             // background: $green-opac;
-            background: $black;
+            // background: $black;
              // background: $gold;
-            //  background: $pale-peach;
+             background: $pale-peach;
+            display: none;
         }
         #dark-header-box{
             background: $red-orange-opac;
@@ -138,6 +139,7 @@ html{
             top:40%;
             left: 38%;
             z-index: 2;
+            display: none;
         }
 
     }
