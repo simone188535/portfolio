@@ -34,7 +34,7 @@ class GlobalNav extends Component {
 
     render() {
         return (
-            <nav className={`navbar navbar-expand-lg navbar-light page-bg-color fixed-top ${this.state.navBackground}`} 
+            <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${this.state.navBackground}`} 
             // onClick={this.toggleBackgroundColor}
             >
                 <div className="container">

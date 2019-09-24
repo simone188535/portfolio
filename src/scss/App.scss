@@ -6,16 +6,19 @@ $font-weight-thin: 300;
 $font-weight-reg: 400;
 $font-weight-med: 500;
 $font-weight-bold: 600;
-$green:#58dcc1;
+
+$green:rgb(88,220,193);
+$green-opac:rgba(88,220,193,.8);
 $soft-black: #343a40;
 $black:#1c1b20;
 $pale-peach:#F9F5F1;
 $orange: rgb(252, 133, 36);
-// $vivid-orange:;
+$vivid-orange: rgb(255,152,0);
 $white: white;
 $dark-red:#a31e32;
 $red:#FF1717;
 $red-orange:rgb(255,87,81);
+$red-orange-opac:rgba(255,87,81,.9);
 $white: white;
 $off-white:#f8f8f8;
 $gold:rgb(253, 194, 45);
@@ -92,8 +95,51 @@ html{
     }
     .secondary-background{
         // background:$off-white;
-        // background: $beige;
-        background: $pale-peach;
+        background: $soft-black;
+        // background: $pale-peach;
+        #black-circle-to-bg{
+            // position: relative;
+            // top:50%;
+            // left: 40%;
+            // width:200px;
+            // height: 200px;
+            // border-radius:50%; 
+            // background: $soft-black;
+        }
+        .header-box{
+            width: 40%;
+            height: 40%;
+        }
+        #light-header-box{
+            // background: $green;
+            background: $vivid-orange;
+            // background: $gold;
+            // background: $pale-peach;
+            // background: $green-opac;
+            top:30%;
+            left: 20%;
+            z-index: 1;
+        }
+        #mid-header-box{
+            top:40%;
+            left: 38%;
+            width: 22%;
+            height: 30%;
+            z-index: 3;
+            // background: $vivid-orange;
+            // background: $green-opac;
+            background: $black;
+             // background: $gold;
+            //  background: $pale-peach;
+        }
+        #dark-header-box{
+            background: $red-orange-opac;
+            // background: $red-orange;
+            top:40%;
+            left: 38%;
+            z-index: 2;
+        }
+
     }
     // nav{
     //     .nav-item{
