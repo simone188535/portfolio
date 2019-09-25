@@ -97,13 +97,17 @@ html{
         // background:$off-white;
         // background: $soft-black;
         background: $pale-peach;
-        #black-circle-to-bg{
-            top:50%;
-            left: 40%;
-            width:200px;
-            height: 200px;
+        #circle-to-bg{
+            top: 60%;
+            left: 50%;
+            width: 1%;
+            height: 1%;
             border-radius:50%; 
             background: $soft-black;
+            opacity: 0;
+        }
+        .all-boxes{
+            opacity: 0;
         }
         .header-box{
             width: 40%;
@@ -118,7 +122,6 @@ html{
             top:30%;
             left: 20%;
             z-index: 1;
-            display: none;
         }
         #mid-header-box{
             top:40%;
@@ -131,7 +134,6 @@ html{
             // background: $black;
              // background: $gold;
              background: $pale-peach;
-            display: none;
         }
         #dark-header-box{
             background: $red-orange-opac;
@@ -139,7 +141,6 @@ html{
             top:40%;
             left: 38%;
             z-index: 2;
-            display: none;
         }
 
     }
@@ -165,7 +166,8 @@ html{
             }
             .header-text-container{
                 top:35%;
-                left: 12%;
+                left: 8%;
+                opacity: 0;
             }
             // background: url("../pablo-gentile-3MYvgsH1uK0-unsplash.jpg") center;
             // background-size: cover;

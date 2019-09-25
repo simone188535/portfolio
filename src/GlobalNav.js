@@ -13,6 +13,7 @@ class GlobalNav extends Component {
         window.addEventListener('scroll', this.toggleBackgroundColor);
     }
 
+    //this returns a class of either nav-background-light or nav-background-dark. Both of which contain nav stylings for the background color and text color 
     toggleBackgroundColor = () => {
         
         let navBackgroundVal = '';
@@ -27,10 +28,6 @@ class GlobalNav extends Component {
         });
     }
 
-    onScroll = () =>{
-        return false;
-        // this.toggleBackgroundColor();
-    }
 
     render() {
         return (
