@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { TweenMax, Circ } from "gsap/TweenMax";
-// import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from "gsap/all";
+import { TweenMax,  TimelineLite, Circ } from "gsap/TweenMax";
+// import ScrollMagic from "scrollmagic";
+
 
 
 class Homepage extends Component {
@@ -17,10 +18,15 @@ class Homepage extends Component {
     // let logoItem = useRef(null);
 
     // console.log(logoItem);
+
     hpHeaderTextSection = () => {
         TweenMax.to('#jumbo-head-container', 2, { y: 50, opacity: 1 });
     }
     hpHeaderAnimatedSection = () => {
+
+        //for Later: use timeLine tool (greensock) to start an svg "orbit animation" after these action are completed. reference: https://codepen.io/guerreiro/pen/obhzc
+        var tl = new TimelineLite();
+        // tl.from();
         TweenMax.to('#circle-to-bg', 1, {
             top: 0,
             left: 0,
