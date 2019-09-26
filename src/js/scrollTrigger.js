@@ -4,9 +4,9 @@
 //this external function controls the trigger for the beginning of scroll animation
 
 const scrollTrigger = () => {
-    if(window.scrollY<300){
-        console.log('function is indeed working');
-    }
-}
+//     if(window.scrollY<300){
+//         console.log('function is indeed working');
+//     }
+ }
 
 export { scrollTrigger };
