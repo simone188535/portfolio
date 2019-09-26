@@ -1,33 +1,41 @@
 import React, { Component } from 'react';
-import { TweenMax,  TimelineLite, Circ } from "gsap/TweenMax";
-// import ScrollMagic from "scrollmagic";
+import { TweenLite, TimelineLite, Circ } from "gsap/TweenMax";
+import { Controller, Scene } from "react-scrollmagic";
+import { Tween } from "react-gsap";
+// import { Tween, Timeline } from "react-gsap";
+// import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.js';
+
 
 
 
 class Homepage extends Component {
     // const Homepage = () => {
-    constructor() {
-        super();
-        // this.circleToBG = React.createRef();
-        //ref to dom node
-        // this.jumboHeadContainer = null;
-        // this.circleToBG = null;
-    }
-
     // simpleRef = createRef();
     // let logoItem = useRef(null);
+    // constructor() {
+    //     super();
+        // this.controller = new ScrollMagic.Controller();
+        // this.state = {
+        //     sectionTwoAnimation: false,
+        //     sectionThreeAnimation: false,
+        //     sectionFourAnimation: false
+
+        // }
+    // }
 
     // console.log(logoItem);
 
     hpHeaderTextSection = () => {
-        TweenMax.to('#jumbo-head-container', 2, { y: 50, opacity: 1 });
+        TweenLite.to('#jumbo-head-container', 2, { y: 50, opacity: 1 });
     }
     hpHeaderAnimatedSection = () => {
 
         //for Later: use timeLine tool (greensock) to start an svg "orbit animation" after these action are completed. reference: https://codepen.io/guerreiro/pen/obhzc
-        var tl = new TimelineLite();
+        const tl = new TimelineLite();
         // tl.from();
-        TweenMax.to('#circle-to-bg', 1, {
+        //incase I forget later, "together" (can be replaced with any word) allows tl's to run at the same time. this "-=(number)" allows animations to overlap. reference: https://www.youtube.com/watch?v=sXJKg8SUSLI&t=85s
+        // 7 minute mark
+        tl.to('#circle-to-bg', 1, {
             top: 0,
             left: 0,
             width: '100%',
@@ -35,25 +43,30 @@ class Homepage extends Component {
             opacity: 1,
             ease: Circ.easeOut
         });
-        TweenMax.to('#circle-to-bg',1,{
-            borderRadius: 0,
-            delay: .7
-        });
-        TweenMax.to('.all-boxes',1,{
-            opacity: .9,
-            delay: 1
-        });
+        tl.to('#circle-to-bg', 1, {
+            borderRadius: 0
+        }, "together-=.25");
+        tl.to('.all-boxes', 1, {
+            opacity: .9
+        }, "together-=.4");
+
+    }
+    subSectionAnimation() {
+        // const tl = new TimelineLite();
+        // tl.to('.sub-section-header', 1, {
+        //     opacity: 1
+        // });
+
 
     }
 
     componentDidMount() {
         this.hpHeaderTextSection();
         this.hpHeaderAnimatedSection();
+        this.subSectionAnimation();
+        // window.addEventListener('scroll', scrollTrigger);
     }
     render() {
-        // useEffect(()=>{
-        //     console.log(logoItem);
-        // });
 
         return (
             <div className="home">
@@ -77,17 +90,30 @@ class Homepage extends Component {
                     </div>
                     <div className="row vh-100 section-second">
                         <div className="col-12">
-                            <h2 className="text-center">Skills</h2>
+                            <Controller>
+                                <Scene duration={300} reverse={false}
+                                    triggerElement=".sub-section-header">
+                                    <Tween
+                                        to={{ opacity: 1 }}
+                                    >
+                                        <h2 id="trigger" className="text-center sub-section-header">Skills</h2>
+                                    </Tween>
+                                </Scene>
+                            </Controller>
                         </div>
                     </div>
+
+                    {/* </Scene>
+                        </Controller> */}
+
                     <div className="row vh-100 section-third">
                         <div className="col-12">
-                            <h2 className="text-center">Clients I Have Worked For</h2>
+                            <h2 className="text-center sub-section-header">Clients I Have Worked For</h2>
                         </div>
                     </div>
                     <div className="row vh-100 section-fourth">
                         <div className="col-12">
-                            <h2 className="text-center">Still Learning</h2>
+                            <h2 className="text-center sub-section-header">Still Learning</h2>
                         </div>
                     </div>
 
