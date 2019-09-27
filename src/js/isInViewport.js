@@ -1,5 +1,10 @@
 import $ from 'jquery';
 
+// This function is very important. It determines how animations are triggered by checking if the selected element is present on the screen (viewpoint)
+// If it is, return true
+//This function is connected to passArgsToCheckViewPoint (is generally called by it)
+//Here for reference: https://gist.github.com/EvanHerman/a1045c19e115edc18b12
+
 let isInViewport  = (elem) => {
 	// if the element doesn't exist, abort
 	if( elem.length === 0 ) {

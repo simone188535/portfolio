@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { TweenLite, TimelineLite, Circ } from "gsap/TweenMax";
+import $ from 'jquery';
 import { heroRightAnimation } from './js/heroRightAnimation';
 import { heroLeftAnimation } from './js/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
-import $ from 'jquery';
+import  SubHeadComponent from './components/SubHeadComponent';
 
 
 const Homepage = () => {
@@ -13,7 +15,8 @@ const Homepage = () => {
     // const [thirdTrigger, setThirdTrigger] = useState(false);
 
     const heroAnimation = () => {
-
+       
+        //
         heroLeftAnimation();
         heroRightAnimation();
 
@@ -22,19 +25,23 @@ const Homepage = () => {
 
         const tl = new TimelineLite();
         // const scrollTop = window.pageYOffset;
-
-        // if (firstTrigger === false) {
-        $.fn.checkVP = (ident) => {
+        
+        //make a passArgsToCheckViewPoint in external file with 2 params the first is the id that needs to be passed. The second 
+        //is a variable containing the code green sock. If the first param is true, run the variable.
+        $.fn.passArgsToCheckViewPoint = (ident) => {
+            
             if (isInViewport($(ident))) {
+                
                 tl.to($(ident), 1, {
+                    y: 50,
                     opacity: 1
                 });
-                // setFirstTrigger(true);
+
             }
         }
-        $(window).checkVP('#trigger');
-        $(window).checkVP('#trigger2');
-        $(window).checkVP('#trigger3');
+        $(window).passArgsToCheckViewPoint('#trigger1');
+        $(window).passArgsToCheckViewPoint('#trigger2');
+        $(window).passArgsToCheckViewPoint('#trigger3');
         //}
         return false;
         // console.log(window.scrollY);
@@ -70,18 +77,18 @@ const Homepage = () => {
                 </div>
                 <div className="row vh-100 section-second">
                     <div className="col-12">
-                        <h2 id="trigger" className="text-center sub-section-header">Skills</h2>
+                        <SubHeadComponent ident="trigger1" text="Skills"/>
                     </div>
                 </div>
 
                 <div className="row vh-100 section-third">
                     <div className="col-12">
-                        <h2 id="trigger2" className="text-center sub-section-header">Clients I Have Worked For</h2>
+                    <SubHeadComponent ident="trigger2" text="Clients I Have Worked For"/>
                     </div>
                 </div>
                 <div className="row vh-100 section-fourth">
                     <div className="col-12">
-                        <h2 id="trigger3" className="text-center sub-section-header">Still Learning</h2>
+                        <SubHeadComponent ident="trigger3" text="Still Learning"/>
                     </div>
                 </div>
 
