@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { TweenLite, TimelineLite, Circ } from "gsap/TweenMax";
 import  { heroRightAnimation } from './js/heroRightAnimation';
 import  { heroLeftAnimation } from './js/heroLeftAnimation';
+import { isInViewport } from './js/isInViewport';
+import $ from 'jquery';
+
 
 const Homepage = () => {
 
@@ -18,10 +21,12 @@ const Homepage = () => {
     const subSectionAnimation = () => {
 
         const tl = new TimelineLite();
+        // const scrollTop = window.pageYOffset;
 
         if (firstTrigger === false) {
-            if (window.scrollY > 300) {
-                tl.to('#trigger', 1, {
+            
+            if (isInViewport('#trigger')) {
+                tl.to($('#trigger'), 1, {
                     opacity: 1
                 });
                 setFirstTrigger(true);
