@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { TweenLite, TimelineLite, Circ } from "gsap/TweenMax";
-import  { heroRightAnimation } from './js/heroRightAnimation';
-import  { heroLeftAnimation } from './js/heroLeftAnimation';
+import { heroRightAnimation } from './js/heroRightAnimation';
+import { heroLeftAnimation } from './js/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
 import $ from 'jquery';
 
 
 const Homepage = () => {
 
-    const [firstTrigger, setFirstTrigger] = useState(false);
+    // const [firstTrigger, setFirstTrigger] = useState(false);
     // const [secondTrigger, setSecondTrigger] = useState(false);
     // const [thirdTrigger, setThirdTrigger] = useState(false);
 
     const heroAnimation = () => {
-        
+
         heroLeftAnimation();
         heroRightAnimation();
 
@@ -23,15 +23,19 @@ const Homepage = () => {
         const tl = new TimelineLite();
         // const scrollTop = window.pageYOffset;
 
-        if (firstTrigger === false) {
-            
-            if (isInViewport('#trigger')) {
-                tl.to($('#trigger'), 1, {
+        // if (firstTrigger === false) {
+        $.fn.checkVP = (ident) => {
+            if (isInViewport($(ident))) {
+                tl.to($(ident), 1, {
                     opacity: 1
                 });
-                setFirstTrigger(true);
+                // setFirstTrigger(true);
             }
         }
+        $(window).checkVP('#trigger');
+        $(window).checkVP('#trigger2');
+        $(window).checkVP('#trigger3');
+        //}
         return false;
         // console.log(window.scrollY);
     }
@@ -72,12 +76,12 @@ const Homepage = () => {
 
                 <div className="row vh-100 section-third">
                     <div className="col-12">
-                        <h2 className="text-center sub-section-header">Clients I Have Worked For</h2>
+                        <h2 id="trigger2" className="text-center sub-section-header">Clients I Have Worked For</h2>
                     </div>
                 </div>
                 <div className="row vh-100 section-fourth">
                     <div className="col-12">
-                        <h2 className="text-center sub-section-header">Still Learning</h2>
+                        <h2 id="trigger3" className="text-center sub-section-header">Still Learning</h2>
                     </div>
                 </div>
 
