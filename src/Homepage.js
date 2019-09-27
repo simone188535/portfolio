@@ -1,12 +1,16 @@
 // import React, { useState, useEffect } from 'react';
 import React, { useEffect } from 'react';
-import { TweenLite, TimelineLite, Circ } from "gsap/TweenMax";
+import { 
+    // TweenLite, 
+    TimelineLite, 
+    // Circ 
+} from "gsap/TweenMax";
 import $ from 'jquery';
 import { heroRightAnimation } from './js/heroRightAnimation';
 import { heroLeftAnimation } from './js/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
 import  SubHeadComponent from './components/SubHeadComponent';
-
+// import { passArgsToCheckViewPoint } from './js/passArgsToCheckViewPoint';
 
 const Homepage = () => {
 
@@ -21,28 +25,48 @@ const Homepage = () => {
         heroRightAnimation();
 
     }
+    const subSectionHeaderAnimation =  (ident) => {
+        
+        const tl = new TimelineLite();
+        
+         if (isInViewport($(ident))) {
+
+            const args = tl.to($(ident), 1, {y: 50,opacity: 1 });
+            return args;
+        }
+    }
+
     const subSectionAnimation = () => {
 
-        const tl = new TimelineLite();
         // const scrollTop = window.pageYOffset;
         
         //make a passArgsToCheckViewPoint in external file with 2 params the first is the id that needs to be passed. The second 
         //is a variable containing the code green sock. If the first param is true, run the variable.
-        $.fn.passArgsToCheckViewPoint = (ident) => {
+        // $.fn.passArgsToCheckViewPoint = (ident) => {
             
-            if (isInViewport($(ident))) {
+        //     if (isInViewport($(ident))) {
                 
-                tl.to($(ident), 1, {
-                    y: 50,
-                    opacity: 1
-                });
+        //         tl.to($(ident), 1, {
+        //             y: 50,
+        //             opacity: 1
+        //         });
 
-            }
-        }
-        $(window).passArgsToCheckViewPoint('#trigger1');
-        $(window).passArgsToCheckViewPoint('#trigger2');
-        $(window).passArgsToCheckViewPoint('#trigger3');
+        //     }
+        // }
+        subSectionHeaderAnimation('#trigger1');
+        subSectionHeaderAnimation('#trigger2');
+        subSectionHeaderAnimation('#trigger3');
+
+        // let scope;
+        // const theAnimation =  'tl.to($('+ this + '), 1, {y: 50,opacity: 1 })';
+
+        // passArgsToCheckViewPoint('#trigger1', theAnimation);
+
+        // $(window).passArgsToCheckViewPoint('#trigger1');
+        // $(window).passArgsToCheckViewPoint('#trigger2');
+        // $(window).passArgsToCheckViewPoint('#trigger3');
         //}
+
         return false;
         // console.log(window.scrollY);
     }
