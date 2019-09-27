@@ -18,14 +18,17 @@ const Homepage = () => {
     // const [secondTrigger, setSecondTrigger] = useState(false);
     // const [thirdTrigger, setThirdTrigger] = useState(false);
 
-    const heroAnimation = () => {
+    const heroAnimation = (heroIdent1,heroIdent2) => {
        
-        //
+        if (isInViewport($(heroIdent1))) {
         heroLeftAnimation();
-        heroRightAnimation();
-
+        }
+        if (isInViewport($(heroIdent2))){
+            heroRightAnimation();
+        }
+       
     }
-    const subSectionHeaderAnimation =  (ident) => {
+    const subSectionHeadAnimation =  (ident) => {
         
         const tl = new TimelineLite();
         
@@ -36,7 +39,7 @@ const Homepage = () => {
         }
     }
 
-    const subSectionAnimation = () => {
+    const allAnimation = () => {
 
         // const scrollTop = window.pageYOffset;
         
@@ -53,9 +56,10 @@ const Homepage = () => {
 
         //     }
         // }
-        subSectionHeaderAnimation('#trigger1');
-        subSectionHeaderAnimation('#trigger2');
-        subSectionHeaderAnimation('#trigger3');
+        heroAnimation('#hero-left','#hero-right');
+        subSectionHeadAnimation('#trigger1');
+        subSectionHeadAnimation('#trigger2');
+        subSectionHeadAnimation('#trigger3');
 
         // let scope;
         // const theAnimation =  'tl.to($('+ this + '), 1, {y: 50,opacity: 1 })';
@@ -73,9 +77,8 @@ const Homepage = () => {
 
 
     useEffect(() => {
-        heroAnimation();
-        subSectionAnimation();
-        window.addEventListener('scroll', subSectionAnimation);
+        allAnimation();
+        window.addEventListener('scroll', allAnimation);
 
     });
 
@@ -83,14 +86,14 @@ const Homepage = () => {
         <div className="home">
             <div className="container-fluid">
                 <div className="row jumbo-head section-one" >
-                    <div className="col-md-6 vh-100 primary-background position-relative">
+                    <div id="hero-left" className="col-md-6 vh-100 primary-background position-relative">
                         <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
                             <div className="header-thin primary-dark-color headline-thin">Hello. My name is ...</div>
                             <h1 className="header-medium white headline-med">Simone Anthony</h1>
                             <div className="header-medium primary-dark-color headline-med">Full Stack Web Developer.</div>
                         </div>
                     </div>
-                    <div id="hpHeaderAnimatedSectionContainer" className="col-md-6 vh-100 secondary-background position-relative">
+                    <div id="hero-right" className="col-md-6 vh-100 secondary-background position-relative">
                         <div id="circle-to-bg" className="position-absolute" ></div>
                         <div id="light-header-box" className="header-box position-absolute all-boxes"></div>
                         <div id="mid-header-box" className="position-absolute all-boxes"></div>
