@@ -31,6 +31,13 @@ $beige: #ded5c4;
 html{
     font-size: 12px;
 }
+html, body {
+    height: 100%;
+    min-height: 100%;
+  }
+//   .container-fluid {
+//     min-height: 100%;
+//   }
 // .page-bg-color{
 //     // background: #EBEAE9;
 //     background: $pale-peach;
@@ -152,7 +159,7 @@ html{
         margin: 5% auto;
     }
     .all-cards{
-        display: flex;
+        // display: flex;
         .card{
             opacity: 0;
         }
