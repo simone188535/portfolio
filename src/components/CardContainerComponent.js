@@ -4,9 +4,10 @@ import skills from '../js/props-objects/skills-props';
 const CardContainerComponent = (props) => {
     
     console.log(skills);
+    
     return (<div id={props.ident} className="row">
         
-        <div className="all-cards">
+        {/* <div className="all-cards"> */}
             <div className="card col-md-4" >
                 <img className="card-img-top" src="#" alt="istest" />
                 <div className="card-body">
@@ -26,7 +27,7 @@ const CardContainerComponent = (props) => {
                 </div>
             </div>
 
-        </div>
+        {/* </div> */}
     </div>);
 }
 export default CardContainerComponent;

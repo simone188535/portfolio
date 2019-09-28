@@ -62,9 +62,6 @@ const Homepage = () => {
         subSectionHeadAnimation('#trigger2');
         subSectionHeadAnimation('#trigger3');
 
-        // const theAnimation =  'tl.to($('+ this + '), 1, {y: 50,opacity: 1 })';
-
-
         return false;
     };
     //these correspond to the SubHead Component. Just simple data
@@ -94,7 +91,7 @@ const Homepage = () => {
 
     return (
         <div className="home">
-            <div className="container-fluid px-0">
+            <div className="container-fluid ">
                 <div className="row jumbo-head section-one" >
                     <div id="hero-left" className="col-md-6 vh-100 primary-background position-relative">
                         <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
@@ -124,11 +121,11 @@ const Homepage = () => {
                     <SubHeadComponent {...SubHeadTrigger2} />
                     <CardContainerComponent ident="second-card-container"/>
 
-                </div>
-                <div className="vh-100 bg-pink">
+                </div> 
+                 <div className="vh-100 bg-pink">
                     <SubHeadComponent {...SubHeadTrigger3} />
 
-                </div>
+                </div> 
 
             </div>
         </div>
