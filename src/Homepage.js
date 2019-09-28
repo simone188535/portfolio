@@ -1,15 +1,13 @@
 // import React, { useState, useEffect } from 'react';
 import React, { useEffect } from 'react';
-import {
-    // TweenLite, 
-    TimelineLite,
-    // Circ 
-} from "gsap/TweenMax";
+import { TimelineLite } from "gsap/TweenMax";
 import $ from 'jquery';
+
 import { heroRightAnimation } from './js/heroRightAnimation';
 import { heroLeftAnimation } from './js/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
 import SubHeadComponent from './components/SubHeadComponent';
+import CardContainerComponent from './components/CardContainerComponent';
 // import { passArgsToCheckViewPoint } from './js/passArgsToCheckViewPoint';
 
 const Homepage = () => {
@@ -27,73 +25,67 @@ const Homepage = () => {
             heroRightAnimation();
         }
 
-    }
+    };
+
     const subSectionHeadAnimation = (ident) => {
 
         const tl = new TimelineLite();
 
         if (isInViewport($(ident))) {
 
-            const args = tl.to($(ident), 1.8, { y: 30, opacity: 1 });
-            return args;
+            return tl.to($(ident), 1.8, { y: 30, opacity: 1 });
+            
         }
-    }
+    };
+
+    const staggerCards = (ident) => {
+        
+        const tl = new TimelineLite();
+
+        //only activates in Viewpoint when parent id (ident) is correct.
+        //It uses css selector syntax to determine which card section  should be selected
+
+        if (isInViewport($(ident))) {
+        // console.log(ident);
+        return tl.staggerTo( ident + " > .all-cards .card", 2, {y: 30, opacity:1}, 0.25);
+
+        }
+    };
 
     const allAnimation = () => {
 
-        // const scrollTop = window.pageYOffset;
-
-        //make a passArgsToCheckViewPoint in external file with 2 params the first is the id that needs to be passed. The second 
-        //is a variable containing the code green sock. If the first param is true, run the variable.
-        // $.fn.passArgsToCheckViewPoint = (ident) => {
-
-        //     if (isInViewport($(ident))) {
-
-        //         tl.to($(ident), 1, {
-        //             y: 50,
-        //             opacity: 1
-        //         });
-
-        //     }
-        // }
         heroAnimation('#hero-left', '#hero-right');
+        
+        staggerCards('#first-card-container');
         //This may seem redundant but it is done for accuracy. I had not choice.
         subSectionHeadAnimation('#trigger1');
         subSectionHeadAnimation('#trigger2');
         subSectionHeadAnimation('#trigger3');
 
-        // let scope;
         // const theAnimation =  'tl.to($('+ this + '), 1, {y: 50,opacity: 1 })';
 
-        // passArgsToCheckViewPoint('#trigger1', theAnimation);
-
-        // $(window).passArgsToCheckViewPoint('#trigger1');
-        // $(window).passArgsToCheckViewPoint('#trigger2');
-        // $(window).passArgsToCheckViewPoint('#trigger3');
-        //}
 
         return false;
-        // console.log(window.scrollY);
-    }
-
-    const trigger = {
+    };
+    //these correspond to the SubHead Component. Just simple data
+    const SubHeadTrigger = {
         sectionNum: 'section-second',
         ident: 'trigger1',
         text: 'Skills'
 
-    }
-    const trigger2 = {
+    };
+    const SubHeadTrigger2 = {
         sectionNum: 'section-third',
         ident: 'trigger2',
         text: 'Clients I Have Worked For'
 
-    }
-    const trigger3 = {
+    };
+    const SubHeadTrigger3 = {
         sectionNum: 'section-four',
         ident: 'trigger3',
         text: 'Still Learning'
 
-    }
+    };
     useEffect(() => {
         allAnimation();
         window.addEventListener('scroll', allAnimation);
@@ -102,7 +94,7 @@ const Homepage = () => {
 
     return (
         <div className="home">
-            <div className="container-fluid">
+            <div className="container-fluid px-0">
                 <div className="row jumbo-head section-one" >
                     <div id="hero-left" className="col-md-6 vh-100 primary-background position-relative">
                         <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
@@ -121,36 +113,20 @@ const Homepage = () => {
 
                 </div>
                 <div className="vh-100 bg-white">
-                    <SubHeadComponent {...trigger} />
+                    <SubHeadComponent {...SubHeadTrigger} />
+                    <CardContainerComponent ident="first-card-container"/>
+
                 </div>
-                {/* <div id="first-card-container" className="col-12">
-                        <div className="card col-md-4" >
-                            <img className="card-img-top" src="#" alt="istest" />
-                            <div className="card-body">
-                                <p className="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
-                            </div>
-                        </div>
-                        <div className="card col-md-4" >
-                            <img className="card-img-top" src="#" alt="istest" />
-                            <div className="card-body">
-                                <p className="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
-                            </div>
-                        </div>
-                        <div className="card col-md-4" >
-                            <img className="card-img-top" src="#" alt="istest" />
-                            <div className="card-body">
-                                <p className="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
-                            </div>
-                        </div>
-                    </div> */}
+
 
 
                 <div className="vh-100 bg-gold">
-                    <SubHeadComponent {...trigger2} />
+                    <SubHeadComponent {...SubHeadTrigger2} />
+                    <CardContainerComponent ident="second-card-container"/>
 
                 </div>
                 <div className="vh-100 bg-pink">
-                    <SubHeadComponent {...trigger3} />
+                    <SubHeadComponent {...SubHeadTrigger3} />
 
                 </div>
 

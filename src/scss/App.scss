@@ -151,6 +151,13 @@ html{
         opacity: 0;
         margin: 5% auto;
     }
+    .all-cards{
+        display: flex;
+        .card{
+            opacity: 0;
+        }
+    }
+    
     // nav{
     //     .nav-item{
     //         color:$black;
