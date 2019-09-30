@@ -31,8 +31,10 @@ const makeCard = (arrayValue) =>{
       return rows;
 }
     return (
-        <div className="all-cards">
-            <div id={props.ident} className="row ">
+        <div id={props.ident} className="all-cards">
+            <div className="row ">
+            {/* <div className="all-cards">
+            <div id={props.ident} className="row "> */}
                 {/* {makeCard(skillsArray)} */}
                 {/* {testing()} */}
                  <div className="card col-md-4" >
@@ -56,6 +58,31 @@ const makeCard = (arrayValue) =>{
                 
 
             </div>
+            <div className="row ">
+                {/* {makeCard(skillsArray)} */}
+                {/* {testing()} */}
+                 <div className="card col-md-4" >
+                    <img className="card-img-top" src="https://dgpr.s3.amazonaws.com/images/camera-icon-png-18.jpg" alt="istest" />
+                    <div className="card-body">
+                        <p className="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
+                    </div>
+                </div>
+                <div className="card col-md-4" >
+                    <img className="card-img-top" src="https://dgpr.s3.amazonaws.com/images/camera-icon-png-18.jpg" alt="istest" />
+                    <div className="card-body">
+                        <p className="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
+                    </div>
+                </div>
+                <div className="card col-md-4" >
+                    <img className="card-img-top" src="https://dgpr.s3.amazonaws.com/images/camera-icon-png-18.jpg" alt="istest" />
+                    <div className="card-body">
+                        <p className="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
+                    </div>
+                </div> 
+                
+
+            </div>
+
         </div>);
 }
 export default CardContainerComponent;

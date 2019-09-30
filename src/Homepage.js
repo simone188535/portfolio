@@ -34,20 +34,20 @@ const Homepage = () => {
         if (isInViewport($(ident))) {
 
             return tl.to($(ident), 1.8, { y: 30, opacity: 1 });
-            
+
         }
     };
 
     const staggerCards = (ident) => {
-        
+
         const tl = new TimelineLite();
 
         //only activates in Viewpoint when parent id (ident) is correct.
         //It uses css selector syntax to determine which card section  should be selected
 
         if (isInViewport($(ident))) {
-        // console.log(ident);
-        return tl.staggerTo( ".all-cards "+ ident + " > .card", 2, {y: 30, opacity:1}, 0.25);
+            // console.log(ident);
+            return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
 
         }
     };
@@ -55,7 +55,7 @@ const Homepage = () => {
     const allAnimation = () => {
 
         heroAnimation('#hero-left', '#hero-right');
-        
+
         staggerCards('#first-card-container');
         //This may seem redundant but it is done for accuracy. I had not choice.
         subSectionHeadAnimation('#trigger1');
@@ -109,20 +109,22 @@ const Homepage = () => {
                     </div>
 
                 </div>
-                <div className=" bg-white">
+
+                {/* <div className=" vh-100 bg-white"> */}
+                <div className="bg-white">
                     <SubHeadComponent {...SubHeadTrigger} />
-                    <CardContainerComponent ident="first-card-container"/>
+                    <CardContainerComponent ident="first-card-container" />
 
                 </div>
 
 
 
- <div className="vh-100 bg-gold">
+                <div className="vh-100 bg-gold">
                     <SubHeadComponent {...SubHeadTrigger2} />
-                    <CardContainerComponent ident="second-card-container"/>
+                    {/* <CardContainerComponent ident="second-card-container"/> */}
 
-                </div> 
-                                {/*
+                </div>
+                {/*
                  <div className="vh-100 bg-pink">
                     <SubHeadComponent {...SubHeadTrigger3} />
 
