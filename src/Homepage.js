@@ -109,7 +109,7 @@ const Homepage = () => {
                     </div>
 
                 </div>
-                <div className="vh-100 bg-white">
+                <div className=" bg-white">
                     <SubHeadComponent {...SubHeadTrigger} />
                     <CardContainerComponent ident="first-card-container"/>
 
@@ -117,15 +117,16 @@ const Homepage = () => {
 
 
 
-                <div className="vh-100 bg-gold">
+ <div className="vh-100 bg-gold">
                     <SubHeadComponent {...SubHeadTrigger2} />
                     <CardContainerComponent ident="second-card-container"/>
 
                 </div> 
+                                {/*
                  <div className="vh-100 bg-pink">
                     <SubHeadComponent {...SubHeadTrigger3} />
 
-                </div> 
+                </div>  */}
 
             </div>
         </div>
