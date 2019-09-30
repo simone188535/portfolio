@@ -164,9 +164,12 @@ html, body {
     .all-cards{
         // display: flex;
         .card{
-            opacity: 1;
+            opacity: 0;
         }
     }
+    // #first-card-container.all-cards .card{
+    //     color:blue;
+    // }
     
     // nav{
     //     .nav-item{

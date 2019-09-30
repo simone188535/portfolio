@@ -47,8 +47,8 @@ const Homepage = () => {
 
         if (isInViewport($(ident))) {
             // console.log(ident);
-            return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
-
+            // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
+            return tl.staggerTo(ident +".all-cards  .card", 2, { y: 30, opacity: 1 }, 0.25);
         }
     };
 
@@ -118,10 +118,10 @@ const Homepage = () => {
                 </div>
 
 
-
-                <div className="vh-100 bg-gold">
+                 {/* <div className=" vh-100 bg-gold"> */}
+                <div className=" bg-gold">
                     <SubHeadComponent {...SubHeadTrigger2} />
-                    {/* <CardContainerComponent ident="second-card-container"/> */}
+                    <CardContainerComponent ident="second-card-container"/>
 
                 </div>
                 {/*
