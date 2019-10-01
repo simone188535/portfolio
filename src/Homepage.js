@@ -111,7 +111,7 @@ const Homepage = () => {
                 </div>
 
                 {/* <div className=" vh-100 bg-white"> */}
-                <div className="bg-white section-second">
+                <div className="section-second">
                     <SubHeadComponent {...SubHeadTrigger} />
                     <CardContainerComponent ident="first-card-container" />
 

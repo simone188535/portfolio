@@ -167,8 +167,11 @@ html, body {
             opacity: 0;
             // max-width: 150px;
             // margin: 2%;
+            font-weight: 500;
             border:none;
-    
+            .card-text {
+                font-size: 1.5em;
+            }
         }
     }
     footer{
@@ -207,6 +210,7 @@ html, body {
         .section-second{
             // height: 700px;
             padding-bottom: 5%;
+            // background: #f8f8f8;
         }
     }
     
