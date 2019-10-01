@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import skillsArray from '../js/props-objects/skills-props';
+import skillsArrayOne from '../js/props-objects/skills-props-pt-1';
 
 const CardContainerComponent = (props) => {
 
@@ -9,53 +9,30 @@ const CardContainerComponent = (props) => {
     // const testing = () =>{
     //     return <div> hello</div>
     // }
-    const rowGiver = () => {
-        
-    }
     const makeCard = (arrayValue) => {
-        console.log(arrayValue)
-        return _.map(arrayValue, (arrayIndex) => {
+        
+        const results = _.map(arrayValue, (arrayIndex) => {
             return (
-                <div key={arrayIndex} className="card col-md-3">
+            //    console.log(arrayIndex);
+                <div  key={arrayIndex.id} className="card col-md-3">
                 <img className="card-img-top img-fluid" src={arrayIndex.img} alt={arrayIndex.alt} />
                 <div className="card-body">
-                    <p className="card-text">{arrayIndex.description}</p>
+                    <p className="card-text text-center">{arrayIndex.description}</p>
                 </div>
             </div>
             )
-        })
-        // console.log(arrayValue.skills);
-        /*
-        const rows = [];
-
-        for (let i = 0; i < arrayValue.skills.length; i++) {
-            // console.log(arrayValue.skills[i]);
-            let arrayIndex = arrayValue.skills[i];
-            // if((i=0) || (i%4==0)){
-                
-            // }
-            rows.push(
-                <div key={i} className="card col-md-3">
-                    <img className="card-img-top img-fluid" src={arrayIndex.img} alt={arrayIndex.alt} />
-                    <div className="card-body">
-                        <p className="card-text">{arrayIndex.description}</p>
-                    </div>
-                </div>
-
-            );
-
         }
-        return rows;
-        */
+        
+        );
+        return results;
     }
     return (
         <div id={props.ident} className="all-cards">
+            <div className="container">
             <div className="row ">
-                {/* <div className="all-cards">
-            <div id={props.ident} className="row "> */}
-                { makeCard(skillsArray.skills) }
-                {/* {testing()} */}
+                { makeCard(skillsArrayOne.skills) }
             </div> 
+            </div>
 
         </div>);
 }

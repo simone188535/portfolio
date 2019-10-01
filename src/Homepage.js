@@ -48,7 +48,7 @@ const Homepage = () => {
         if (isInViewport($(ident))) {
             // console.log(ident);
             // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
-            return tl.staggerTo(ident +".all-cards  .card", 2, { y: 30, opacity: 1 }, 0.25);
+            return tl.staggerTo(ident +".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.5);
         }
     };
 
@@ -66,19 +66,19 @@ const Homepage = () => {
     };
     //these correspond to the SubHead Component. Just simple data
     const SubHeadTrigger = {
-        sectionNum: 'section-second',
+        // sectionNum: 'section-second',
         ident: 'trigger1',
         text: 'Skills'
 
     };
     const SubHeadTrigger2 = {
-        sectionNum: 'section-third',
+        // sectionNum: 'section-third',
         ident: 'trigger2',
         text: 'Clients I Have Worked For'
 
     };
     const SubHeadTrigger3 = {
-        sectionNum: 'section-four',
+        // sectionNum: 'section-four',
         ident: 'trigger3',
         text: 'Still Learning'
 
@@ -111,7 +111,7 @@ const Homepage = () => {
                 </div>
 
                 {/* <div className=" vh-100 bg-white"> */}
-                <div className="bg-white">
+                <div className="bg-white section-second">
                     <SubHeadComponent {...SubHeadTrigger} />
                     <CardContainerComponent ident="first-card-container" />
 
@@ -119,7 +119,7 @@ const Homepage = () => {
 
 
                  {/* <div className=" vh-100 bg-gold"> */}
-                <div className=" bg-gold">
+                <div className=" bg-gold section-third">
                     <SubHeadComponent {...SubHeadTrigger2} />
                     <CardContainerComponent ident="second-card-container"/>
 

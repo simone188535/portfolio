@@ -165,17 +165,12 @@ html, body {
         // display: flex;
         .card{
             opacity: 0;
+            // max-width: 150px;
+            // margin: 2%;
+            border:none;
+    
         }
     }
-    // #first-card-container.all-cards .card{
-    //     color:blue;
-    // }
-    
-    // nav{
-    //     .nav-item{
-    //         color:$black;
-    //     }
-    // }
     footer{
         background: $soft-black;
         color: $white;
@@ -208,6 +203,10 @@ html, body {
         .bg-pink{
             background: #e67b77;
             // background: $orange;
+        }
+        .section-second{
+            // height: 700px;
+            padding-bottom: 5%;
         }
     }
     
