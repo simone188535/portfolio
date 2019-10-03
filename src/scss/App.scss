@@ -171,11 +171,13 @@ html, body {
             border:none;
             .card-text {
                 font-size: 1.5em;
+                color: $soft-black;
+                // text-shadow:  4px 4px 0px rgba(0,0,0,0.25);
             }
         }
     }
     footer{
-        background: $soft-black;
+        background: $black;
         color: $white;
     }
     .home{
@@ -207,17 +209,75 @@ html, body {
             background: #e67b77;
             // background: $orange;
         }
+        .bg-orange-red{
+            // background: rgb(248,248,248);
+            background: $red-orange;
+            // background:$soft-black;
+        }
+        .bg-pale-peach{
+            // background: rgb(248,248,248);
+            // background: $red-orange;
+            background: $pale-peach;
+        }
         .section-second{
             // height: 700px;
             padding-bottom: 5%;
             // background: #f8f8f8;
         }
+        .section-third{
+            #left-text-container{
+                // background: $soft-black;
+                width: 80%;
+                height: 50%;
+                top: 25%;
+                z-index: 1;
+                left: 12%;
+            
+            .section-three-small-col{
+                color:$pale-peach;
+                .small-col-line{
+                    font-weight: 700; 
+                    line-height: 1;
+                }
+                #line-1{
+                    // font-size: 4rem;
+                    font-size: 4.5rem;
+                }#line-2{
+                    // font-size: 6rem;
+                    // font-size: 8rem;
+                    // font-size: 7rem;
+                    font-size: 6.5rem;
+                }
+                #line-3{
+                    // font-size: 7rem;
+                    // font-size: 10rem;
+                    // font-size: 8rem;
+                    font-size: 7.5rem;
+                }
+            }
+        }
+        #right-text-container{
+            
+            width: 75%;
+            top: 30%;
+            left: 15%;
+            
+            #large-line-1{
+                font-size: 3rem;
+                font-style: italic;
+                font-weight:500; 
+
+            }
+            #large-line-2{
+                font-size: 3rem;
+                font-style: italic;
+                font-weight:300; 
+
+            }
+        }
+        }
     }
     
-    
-    // div{
-    //     color: purple;
-    // } 
         
     }
 

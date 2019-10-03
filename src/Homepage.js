@@ -119,9 +119,29 @@ const Homepage = () => {
 
 
                  {/* <div className=" vh-100 bg-gold"> */}
-                <div className=" bg-gold section-third">
-                    <SubHeadComponent {...SubHeadTrigger2} />
-                    <CardContainerComponent ident="second-card-container"/>
+                <div className="section-third position-relative">
+                    <div className="row">
+                    <div className="col-md-4 bg-orange-red vh-100">
+                        <div id="left-text-container" className="position-relative">
+                            {/* <img  class="img-fluid" src="https://dgpr.s3.amazonaws.com/images/project/photo-1510148199876-8a856ee41d42.jpeg" /> */}
+                            <div className="section-three-small-col">
+                            <div id="line-1" className="small-col-line">Want to</div>
+                            <div id="line-2" className="small-col-line">Learn</div> 
+                            <div id="line-3" className="small-col-line">More?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-8 bg-pale-peach vh-100">
+                        
+                    <div id="right-text-container" className="position-relative">
+                                <div id="large-line-1" className="large-col-line">For information </div>
+                                <div id="large-line-2" className="large-col-line"> about employment history, resume and aspirations...</div>
+                                <div id="large-line-3" className="large-col-line">click here</div>
+                            </div>
+                    </div>
+                    </div>
+                    {/* <SubHeadComponent {...SubHeadTrigger2} />
+                    <CardContainerComponent ident="second-card-container"/> */}
 
                 </div>
                 {/*
