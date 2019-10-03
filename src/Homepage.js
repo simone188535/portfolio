@@ -45,7 +45,7 @@ const Homepage = () => {
         if (isInViewport($(ident))) {
             // console.log(ident);
             // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
-            return TweenMax.staggerTo(ident +".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.5);
+            return TweenMax.staggerTo(ident +".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.4);
         }
     };
 
