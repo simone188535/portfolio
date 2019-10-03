@@ -309,7 +309,7 @@ html, body {
         .full-page{
         .home{
             .jumbo-head .headline-med {
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
         }
     }
@@ -320,21 +320,38 @@ html, body {
 
         .full-page{
             .home{
-            
+                .jumbo-head{
+                    .headline-thin{
+                        font-size: 1.5rem;
+                    }
+                    .headline-med{
+                        font-size: 2.6rem;
+                    }
+                    // .header-img{
+                    //     height: 350px;
+                    // }
+                    .header-text-container{
+                        top:35%;
+                        left: 8%;
+                        opacity: 0;
+                        width: 85%;
+                    }
+
+                }
                 .header-box{
                     width: 50%;
                 }
                 #light-header-box{
-                    left: 15%;
+                    left: 17%;
                 }
                 #mid-header-box{
-                    left: 32%;
+                    left: 34%;
                     width: 33%;
                     border-radius: 14% 0px 14% 0px;
                 }
                 
                 #dark-header-box{
-                    left: 32%;
+                    left: 34%;
                 }
             }
         }
@@ -345,18 +362,19 @@ html, body {
         .full-page{
             .home{
                 .header-box{
-                    width: 45%;
+                    width: 36%;
                 }
                 #light-header-box{
-                    left: 15%;
+                    left: 20%;
                 }
                 #mid-header-box{
-                    width: 28%;
-                    border-radius: 14.5% 0px 14.5% 0px;
+                    width: 18%;
+                    border-radius: 15% 0px 15% 0px;
+                    left: 38%;
                 }
                 
                 #dark-header-box{
-                    // left: 32%;
+                    left: 38%;
                 }
 
                 .card-img-top {
