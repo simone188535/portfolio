@@ -107,6 +107,72 @@ html, body {
         // background:$off-white;
         // background: $soft-black;
         background: $pale-peach;
+
+    }
+    .sub-section-header{
+        opacity: 0;
+        margin: 5% auto;
+    }
+    .all-cards{
+        // display: flex;
+        .card{
+            opacity: 0;
+            // max-width: 150px;
+            // margin: 2%;
+            font-weight: 500;
+            border:none;
+            .card-text {
+                font-size: 1.5em;
+                color: $soft-black;
+                // text-shadow:  4px 4px 0px rgba(0,0,0,0.25);
+            }
+        }
+    }
+    footer{
+        background: $black;
+        color: $white;
+    }
+    .home{
+        .jumbo-head{
+            .headline-thin{
+                font-size: 2rem;
+            }
+            .headline-med{
+                font-size: 4rem;
+            }
+            .header-img{
+                height: 350px;
+            }
+            .header-text-container{
+                top:35%;
+                left: 8%;
+                opacity: 0;
+                width: 85%;
+            }
+            // background: url("../pablo-gentile-3MYvgsH1uK0-unsplash.jpg") center;
+            // background-size: cover;
+        }
+        
+        .bg-white{
+            background: $white;
+        }
+        .bg-gold{
+            background: $gold;
+        }
+        .bg-pink{
+            background: #e67b77;
+            // background: $orange;
+        }
+        .bg-orange-red{
+            // background: rgb(248,248,248);
+            background: $red-orange;
+            // background:$soft-black;
+        }
+        .bg-pale-peach{
+            // background: rgb(248,248,248);
+            // background: $red-orange;
+            background: $pale-peach;
+        }
         #circle-to-bg{
             top: 60%;
             left: 50%;
@@ -154,70 +220,6 @@ html, body {
             left: 38%;
             z-index: 2;
             border-radius:10%; 
-        }
-
-    }
-    .sub-section-header{
-        opacity: 0;
-        margin: 5% auto;
-    }
-    .all-cards{
-        // display: flex;
-        .card{
-            opacity: 0;
-            // max-width: 150px;
-            // margin: 2%;
-            font-weight: 500;
-            border:none;
-            .card-text {
-                font-size: 1.5em;
-                color: $soft-black;
-                // text-shadow:  4px 4px 0px rgba(0,0,0,0.25);
-            }
-        }
-    }
-    footer{
-        background: $black;
-        color: $white;
-    }
-    .home{
-        .jumbo-head{
-            .headline-thin{
-                font-size: 2rem;
-            }
-            .headline-med{
-                font-size: 4rem;
-            }
-            .header-img{
-                height: 350px;
-            }
-            .header-text-container{
-                top:35%;
-                left: 8%;
-                opacity: 0;
-            }
-            // background: url("../pablo-gentile-3MYvgsH1uK0-unsplash.jpg") center;
-            // background-size: cover;
-        }
-        .bg-white{
-            background: $white;
-        }
-        .bg-gold{
-            background: $gold;
-        }
-        .bg-pink{
-            background: #e67b77;
-            // background: $orange;
-        }
-        .bg-orange-red{
-            // background: rgb(248,248,248);
-            background: $red-orange;
-            // background:$soft-black;
-        }
-        .bg-pale-peach{
-            // background: rgb(248,248,248);
-            // background: $red-orange;
-            background: $pale-peach;
         }
         .section-second{
             // height: 700px;
@@ -302,4 +304,82 @@ html, body {
     
         
     }
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+    //     .full-page{
+    //     .home{
+    //         .header-box{
+    //             width: 55%;
+    //         }
+    //         #light-header-box{
+    //             left: 15%;
+    //         }
+    //         #mid-header-box{
+    //             left: 32%;
+    //             width: 38%;
+    //             border-radius: 14% 0px 14% 0px;
+    //         }
+            
+    //         #dark-header-box{
+    //             left: 32%;
+    //         }
+    //     }
+    // }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+        .full-page{
+            .home{
+                .header-box{
+                    width: 50%;
+                }
+                #light-header-box{
+                    left: 15%;
+                }
+                #mid-header-box{
+                    left: 32%;
+                    width: 33%;
+                    border-radius: 14% 0px 14% 0px;
+                }
+                
+                #dark-header-box{
+                    left: 32%;
+                }
+            }
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .full-page{
+            .home{
+                .header-box{
+                    width: 45%;
+                }
+                #light-header-box{
+                    left: 15%;
+                }
+                #mid-header-box{
+                    width: 28%;
+                }
+                
+                #dark-header-box{
+                    // left: 32%;
+                }
+            }
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
+
 
