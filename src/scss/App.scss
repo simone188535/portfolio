@@ -231,7 +231,9 @@ html, body {
                 height: 50%;
                 top: 25%;
                 z-index: 1;
-                left: 12%;
+                right: 6%;
+                opacity: 0;
+                margin: 0 auto;
             
             .section-three-small-col{
                 color:$pale-peach;
@@ -260,7 +262,9 @@ html, body {
             
             width: 75%;
             top: 30%;
-            left: 15%;
+            left: 0%;
+            margin: 0 auto;
+        
             
             #large-line-1{
                 font-size: 3rem;
@@ -273,6 +277,24 @@ html, body {
                 font-style: italic;
                 font-weight:300; 
 
+            }
+            #large-line-3{
+                border: $black solid 2px;
+                width: 150px;
+                height: 30px;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 5px;
+                font-size: 1em;
+                margin-top: 40px;
+                display: inline-block;
+                color: $black;
+
+                &:hover{
+                    background: $vivid-orange;
+                    color: $white;
+                    border: $vivid-orange solid 2px;
+                }
             }
         }
         }

@@ -1,6 +1,7 @@
 // import React, { useState, useEffect } from 'react';
 import React, { useEffect } from 'react';
-import { TimelineLite } from "gsap/TweenMax";
+import { TimelineLite,TweenMax} from "gsap/TweenMax";
+import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
 import { heroRightAnimation } from './js/heroRightAnimation';
@@ -8,13 +9,9 @@ import { heroLeftAnimation } from './js/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
 import SubHeadComponent from './components/SubHeadComponent';
 import CardContainerComponent from './components/CardContainerComponent';
-// import { passArgsToCheckViewPoint } from './js/passArgsToCheckViewPoint';
+
 
 const Homepage = () => {
-
-    // const [firstTrigger, setFirstTrigger] = useState(false);
-    // const [secondTrigger, setSecondTrigger] = useState(false);
-    // const [thirdTrigger, setThirdTrigger] = useState(false);
 
     const heroAnimation = (heroIdent1, heroIdent2) => {
         //if this is in viewpoint activate animation
@@ -29,60 +26,71 @@ const Homepage = () => {
 
     const subSectionHeadAnimation = (ident) => {
 
-        const tl = new TimelineLite();
+        // const tl = new TimelineLite();
 
         if (isInViewport($(ident))) {
 
-            return tl.to($(ident), 1.8, { y: 30, opacity: 1 });
+            return TweenMax.to($(ident), 1.8, { y: 30, opacity: 1 });
 
         }
     };
 
     const staggerCards = (ident) => {
 
-        const tl = new TimelineLite();
+        // const tl = new TimelineLite();
 
-        //only activates in Viewpoint when parent id (ident) is correct.
+        //only activates in Viewpoint when parent Id (ident) is correct.
         //It uses css selector syntax to determine which card section  should be selected
 
         if (isInViewport($(ident))) {
             // console.log(ident);
             // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
-            return tl.staggerTo(ident +".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.5);
+            return TweenMax.staggerTo(ident +".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.5);
         }
     };
+
+    const  finalSection = (ident1) => {
+        const tl = new TimelineLite();
+
+        if (isInViewport($(ident1))) {
+            tl.to($(ident1), 1, { x: "12%",opacity: 1});
+        }
+        // if (isInViewport($(ident2))) {
+
+        // }
+    }
 
     const allAnimation = () => {
 
         heroAnimation('#hero-left', '#hero-right');
 
         staggerCards('#first-card-container');
-        //This may seem redundant but it is done for accuracy. I had not choice.
+
+        //This may seem redundant but it is done for accuracy. 
         subSectionHeadAnimation('#trigger1');
-        subSectionHeadAnimation('#trigger2');
-        subSectionHeadAnimation('#trigger3');
+        // subSectionHeadAnimation('#trigger2');
+        // subSectionHeadAnimation('#trigger3');
+        finalSection('#left-text-container','#right-text-container');
 
         return false;
     };
     //these correspond to the SubHead Component. Just simple data
     const SubHeadTrigger = {
-        // sectionNum: 'section-second',
         ident: 'trigger1',
         text: 'Skills'
 
     };
-    const SubHeadTrigger2 = {
-        // sectionNum: 'section-third',
-        ident: 'trigger2',
-        text: 'Clients I Have Worked For'
+    // const SubHeadTrigger2 = {
+    //     ident: 'trigger2',
+    //     text: 'Clients I Have Worked For'
 
-    };
-    const SubHeadTrigger3 = {
-        // sectionNum: 'section-four',
-        ident: 'trigger3',
-        text: 'Still Learning'
+    // };
+    // const SubHeadTrigger3 = {
+    //     // sectionNum: 'section-four',
+    //     ident: 'trigger3',
+    //     text: 'Still Learning'
 
-    };
+    // };
     useEffect(() => {
         allAnimation();
         window.addEventListener('scroll', allAnimation);
@@ -136,20 +144,11 @@ const Homepage = () => {
                     <div id="right-text-container" className="position-relative">
                                 <div id="large-line-1" className="large-col-line">For information </div>
                                 <div id="large-line-2" className="large-col-line"> about employment history, resume and aspirations...</div>
-                                <div id="large-line-3" className="large-col-line">click here</div>
+                                <Link to="/about"><div id="large-line-3" className="large-col-line">click here</div></Link>
                             </div>
                     </div>
                     </div>
-                    {/* <SubHeadComponent {...SubHeadTrigger2} />
-                    <CardContainerComponent ident="second-card-container"/> */}
-
                 </div>
-                {/*
-                 <div className="vh-100 bg-pink">
-                    <SubHeadComponent {...SubHeadTrigger3} />
-
-                </div>  */}
-
             </div>
         </div>
     );
