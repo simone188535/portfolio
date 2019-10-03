@@ -306,25 +306,13 @@ html, body {
     }
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
-    //     .full-page{
-    //     .home{
-    //         .header-box{
-    //             width: 55%;
-    //         }
-    //         #light-header-box{
-    //             left: 15%;
-    //         }
-    //         #mid-header-box{
-    //             left: 32%;
-    //             width: 38%;
-    //             border-radius: 14% 0px 14% 0px;
-    //         }
-            
-    //         #dark-header-box{
-    //             left: 32%;
-    //         }
-    //     }
-    // }
+        .full-page{
+        .home{
+            .jumbo-head .headline-med {
+                font-size: 3.5rem;
+            }
+        }
+    }
     }
 
     /* Medium Devices, Desktops */
@@ -332,6 +320,7 @@ html, body {
 
         .full-page{
             .home{
+            
                 .header-box{
                     width: 50%;
                 }
@@ -363,10 +352,16 @@ html, body {
                 }
                 #mid-header-box{
                     width: 28%;
+                    border-radius: 14.5% 0px 14.5% 0px;
                 }
                 
                 #dark-header-box{
                     // left: 32%;
+                }
+
+                .card-img-top {
+                    width: 50%;
+                    margin: 0 auto;
                 }
             }
         }
