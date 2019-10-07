@@ -354,18 +354,60 @@ html, body {
             }
         }
     }
-    .about{
-        .hero-opac{
-            background-color: rgba(247,249,252,.6);
-            height: 100%;
-        }
-        .hero-section{
+
+    .about {
+        .hero-section {
             height: 530px;
-            background-image: url('https://dgpr.s3.amazonaws.com/images/project/about-me.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            
+
+            // background-image: url('https://dgpr.s3.amazonaws.com/images/project/photo-1437419764061-2473afe69fc2.jpeg');
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            // background-position: center center;
+            // background-color: $red-orange;
+       
+        }
+
+        // .hero-opac {
+        //     //background-color: rgba(46,46,46,.4);
+        //     background-color: $vivid-orange;
+
+        //     // height: 100%;
+       
+        // }
+
+        .left-hero {
+            background: $off-white;
+        }
+
+        .right-hero {
+            background: $gold;
+            font-weight: 400;
+        }
+
+        .hero-text {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .hero-text-left {
+            color: $black;
+            top: 40%;
+
+            // left: 40%;
+            font-size: 5rem;
+        }
+
+        .hero-text-right-top {
+            color: #1c1b20;
+            top: 35%;
+            font-size: 3rem;
+        }
+
+        .hero-text-right-bottom {
+           
+            color: $white;
+            top: 40%;
+            font-size: 1.5rem;
         }
     }
 }
@@ -465,7 +507,9 @@ html, body {
                 // .header-text-container {
                 //     width: 100%;
                 // }
+           
             }
+
             .header-box {
                 width: 36%;
             }
