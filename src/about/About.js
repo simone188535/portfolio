@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { TimelineLite,TweenMax} from "gsap/TweenMax";
+// import $ from 'jquery';
+// import { isInViewport } from './js/isInViewport';
+// import SubHeadComponent from './components/SubHeadComponent';
+
 
 const About = () => {
+
+    useEffect(() => {
+        // allAnimation();
+        // window.addEventListener('scroll', allAnimation);
+        console.log('active');
+    
+    });
+    
     return (
         <div className="about">
             <div className="container-fluid ">
