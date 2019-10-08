@@ -357,7 +357,8 @@ html, body {
 
     .about {
         .hero-section {
-            height: 530px;
+            // height: 530px;
+            height: 100vh;
 
             // background-image: url('https://dgpr.s3.amazonaws.com/images/project/photo-1437419764061-2473afe69fc2.jpeg');
             // background-size: cover;
@@ -381,7 +382,7 @@ html, body {
 
         .right-hero {
             background: $gold;
-            font-weight: 400;
+            font-weight: 500;
         }
 
         .hero-text {
