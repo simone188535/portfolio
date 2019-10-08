@@ -357,24 +357,21 @@ html, body {
 
     .about {
         .hero-section {
-             height: 530px;
+            height: 530px;
             // height: 100vh;
-
-            // background-image: url('https://dgpr.s3.amazonaws.com/images/project/photo-1437419764061-2473afe69fc2.jpeg');
-            // background-size: cover;
-            // background-repeat: no-repeat;
-            // background-position: center center;
-            // background-color: $red-orange;
+         
+            // #bottom-to-top{
+            //     background: $soft-black;
+            //     bottom: 0;
+            //     height: 100%;
+            // }
+            #top-to-bottom{
+                background: $red-orange;
+                top: 0;
+                height: 0%;
+            }
        
         }
-
-        // .hero-opac {
-        //     //background-color: rgba(46,46,46,.4);
-        //     background-color: $vivid-orange;
-
-        //     // height: 100%;
-       
-        // }
 
         .left-hero {
             // background: $off-white;
@@ -382,16 +379,16 @@ html, body {
             background: $soft-black;
             // background: #51FEAD;
         }
-        .hero-text-left {
+        #hero-text-left {
             color: $pale-peach;
             top: 40%;
-
+           opacity: 0;
             // left: 40%;
             font-size: 5rem;
         }
 
         .right-hero {
-            background: $red-orange;
+            background: $soft-black;
             // background: #FEAD51;
             font-weight: 500;
         }
@@ -401,19 +398,25 @@ html, body {
             margin: 0 auto;
         }
 
-        
+        #hero-text-right {
+            opacity: 0;
+            top: 35%;
+        }   
 
         .hero-text-right-top {
             color: #1c1b20;
-            top: 35%;
+            // top: 35%;
             font-size: 3rem;
+            font-weight: 400;
         }
 
         .hero-text-right-bottom {
            
             color: $pale-peach;
-            top: 40%;
+            // top: 40%;
             font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 3%;
         }
     }
 }
