@@ -357,8 +357,8 @@ html, body {
 
     .about {
         .hero-section {
-            // height: 530px;
-            height: 100vh;
+             height: 530px;
+            // height: 100vh;
 
             // background-image: url('https://dgpr.s3.amazonaws.com/images/project/photo-1437419764061-2473afe69fc2.jpeg');
             // background-size: cover;
@@ -377,11 +377,22 @@ html, body {
         // }
 
         .left-hero {
-            background: $off-white;
+            // background: $off-white;
+            //  background: $pale-peach;
+            background: $soft-black;
+            // background: #51FEAD;
+        }
+        .hero-text-left {
+            color: $pale-peach;
+            top: 40%;
+
+            // left: 40%;
+            font-size: 5rem;
         }
 
         .right-hero {
-            background: $gold;
+            background: $red-orange;
+            // background: #FEAD51;
             font-weight: 500;
         }
 
@@ -390,13 +401,7 @@ html, body {
             margin: 0 auto;
         }
 
-        .hero-text-left {
-            color: $black;
-            top: 40%;
-
-            // left: 40%;
-            font-size: 5rem;
-        }
+        
 
         .hero-text-right-top {
             color: #1c1b20;
@@ -406,7 +411,7 @@ html, body {
 
         .hero-text-right-bottom {
            
-            color: $white;
+            color: $pale-peach;
             top: 40%;
             font-size: 1.5rem;
         }
