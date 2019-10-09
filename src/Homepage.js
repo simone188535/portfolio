@@ -45,7 +45,7 @@ const Homepage = () => {
         if (isInViewport($(ident))) {
             // console.log(ident);
             // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
-            return TweenMax.staggerTo(ident + ".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.4);
+            return TweenMax.staggerTo(ident + ".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.3);
         }
     };
 
@@ -55,9 +55,6 @@ const Homepage = () => {
         if (isInViewport($(ident1))) {
             tl.to($(ident1), 1, { x: "12%", opacity: 1 });
         }
-        // if (isInViewport($(ident2))) {
-
-        // }
     }
 
     const allAnimation = () => {
@@ -80,17 +77,7 @@ const Homepage = () => {
         text: 'Skills'
 
     };
-    // const SubHeadTrigger2 = {
-    //     ident: 'trigger2',
-    //     text: 'Clients I Have Worked For'
 
-    // };
-    // const SubHeadTrigger3 = {
-    //     // sectionNum: 'section-four',
-    //     ident: 'trigger3',
-    //     text: 'Still Learning'
-
-    // };
     useEffect(() => {
         allAnimation();
         window.addEventListener('scroll', allAnimation);
@@ -108,7 +95,7 @@ const Homepage = () => {
                             <div className="header-medium primary-dark-color headline-med">Full Stack Web Developer.</div>
                         </div>
                     </div>
-                    <div id="hero-right" className="col-md-6 vh-100 secondary-background position-relative">
+                    <div id="hero-right" className="col-md-6 vh-100 secondary-background position-relative hero-right-container">
                         <div id="circle-to-bg" className="position-absolute" ></div>
                         <div id="light-header-box" className="header-box position-absolute all-boxes"></div>
                         <div id="mid-header-box" className="position-absolute all-boxes"></div>
@@ -142,9 +129,11 @@ const Homepage = () => {
                         <div className="col-md-8 bg-pale-peach vh-100">
 
                             <div id="right-text-container" className="position-relative">
-                                <div id="large-line-1" className="large-col-line">For information </div>
-                                <div id="large-line-2" className="large-col-line"> about employment history, resume and aspirations...</div>
-                                <Link to="/about"><div id="large-line-3" className="large-col-line">click here</div></Link>
+                                <div className="section-three-large-col">
+                                    <div id="large-line-1" className="large-col-line">For information </div>
+                                    <div id="large-line-2" className="large-col-line"> about employment history, resume and aspirations...</div>
+                                    <Link to="/about"><div id="large-line-3" className="large-col-line">click here</div></Link>
+                                </div>
                             </div>
                         </div>
                     </div>

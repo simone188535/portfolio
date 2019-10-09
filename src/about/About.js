@@ -26,23 +26,23 @@ const About = () => {
         if (isInViewport($(heroIdent2))) {
             tl.to($('#top-to-bottom'), .5, {
                 height: "100%"
-            },"-=1")
+            }, "-=1")
                 .to($('#hero-text-right'), .5, {
                     opacity: 1
                 });
         }
     }
-    const aboutMeSectionAnimation = (aboutMeIdent) =>{
+    const aboutMeSectionAnimation = (aboutMeIdent) => {
         const tl = new TimelineLite();
         if (isInViewport($(aboutMeIdent))) {
             tl.to($('#about-me-left'), .5, {
-               opacity:1,
-               x: "10%"
-            },"sameTime")
-            .to($('#about-me-right'), .5, {
-                opacity:1,  
-                x: "-10%"
-             },"sameTime");
+                opacity: 1,
+                x: "10%"
+            }, "sameTime")
+                .to($('#about-me-right'), .5, {
+                    opacity: 1,
+                    x: "-10%"
+                }, "sameTime");
         }
 
     }
@@ -50,16 +50,16 @@ const About = () => {
         aboutHeroAnimation('#left-hero-content', '#right-hero-content');
         aboutMeSectionAnimation('#about-me-trigger');
     }
-    const SubHeadTrigger = {
+    const AboutTrigger = {
         ident: 'aboutTrigger1',
         text: 'Resume'
 
     };
-    // const SubHeadTrigger2 = {
-    //     ident: 'aboutTrigger2',
-    //     text: 'Me'
+    const AboutTrigger2 = {
+        ident: 'aboutTrigger2',
+        text: 'Aspirations'
 
-    // };
+    };
 
 
     useEffect(() => {
@@ -108,11 +108,10 @@ const About = () => {
             </div>
             <div className="container">
                 <div className="resume-section">
-                    <SubHeadComponent {...SubHeadTrigger} />
+                    <SubHeadComponent {...AboutTrigger} />
                     <PDFDisplayButtonComponent />
                 </div>
                 <div id="about-me-trigger" className="about-me">
-                    {/* <SubHeadComponent {...SubHeadTrigger2} /> */}
 
                     <div className="row">
                         <div id="about-me-left" className="col-md-4 offset-md-1 position-relative">
@@ -126,6 +125,20 @@ const About = () => {
                                     I am a web developer with 2+ years of experience who enjoys building fun and creative projects.
                                     Web development is my passion and I enjoy writing and building personal projects on my free time.
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-fluid ">
+                <div className="aspiration-section">
+                    <SubHeadComponent {...AboutTrigger2} />
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="aspiration-list">
+                                <div id="aspiration-list-item-1" className="aspiration-item position-relative">I would like to become a full Stack JavaScript Developer (preferable the MERN stack).</div>
+                                <div id="aspiration-list-item-2" className="aspiration-item position-relative">I am currently learning Node.js, Express and  MongoDB. </div>
+                                <div id="aspiration-list-item-3" className="aspiration-item position-relative">In the future I would also like to create my own animation Library and put it on github. </div>
                             </div>
                         </div>
                     </div>

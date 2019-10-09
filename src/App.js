@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Homepage from './Homepage';
-import Projects from './projects/Projects';
+import Work from './work/Work';
 import About from './about/About';
 import Contact from './contact/Contact';
 import GlobalNav from './GlobalNav';
@@ -16,7 +16,7 @@ const App = () => {
             <GlobalNav />
                 <div>
                     <Route path="/" exact component={Homepage} />
-                    <Route path="/projects" component={Projects} />
+                    <Route path="/work" component={Work} />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
                 </div>
