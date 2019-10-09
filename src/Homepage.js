@@ -116,7 +116,7 @@ const Homepage = () => {
                 {/* <div className=" vh-100 bg-gold"> */}
                 <div className="section-third position-relative">
                     <div className="row">
-                        <div className="col-md-4 bg-orange-red vh-100">
+                        <div className="col-md-4 bg-orange-red vh-100 three-line-container">
                             <div id="left-text-container" className="position-relative">
                                 {/* <img  class="img-fluid" src="https://dgpr.s3.amazonaws.com/images/project/photo-1510148199876-8a856ee41d42.jpeg" /> */}
                                 <div className="section-three-small-col">

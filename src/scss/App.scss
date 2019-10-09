@@ -51,6 +51,9 @@ html, body {
 //     background: $pale-peach;
 // }
 .full-page {
+    max-width: 1440px;
+    margin: 0 auto;
+    
     .primary-color-light {
         color: $green;
     }
@@ -255,6 +258,7 @@ html, body {
                 width: 22%;
                 height: 30%;
                 z-index: 3;
+                max-width: 170px;
 
                 //max-width: 170px;
 
@@ -617,12 +621,11 @@ html, body {
                 .headline-med {
                     font-size: 2rem;
                 }
+
                 .header-text-container {
                     left: 20%;
                     width: 70%;
                 }
-
-
             }
 
             .hero-right-container {
@@ -657,7 +660,7 @@ html, body {
             .section-third {
                 #left-text-container {
                     // background: $soft-black;
-                    text-align: center;
+                    // text-align: center;
                     top: 30%;
 
                     .section-three-small-col {
@@ -723,12 +726,121 @@ html, body {
                     left: 38%;
                 }
             }
+
+            .section-third {
+                #left-text-container {
+                    text-align: center;
+                    right: 6%;
+                    width: 50%;
+
+                    .section-three-small-col {
+                        #line-1 {
+                            font-size: 4rem;
+                        }
+
+                        #line-2 {
+                            font-size: 6rem;
+                        }
+
+                        #line-3 {
+                            font-size: 7rem;
+                        }
+                    }
+                }
+
+                #right-text-container {
+                    .section-three-large-col {
+                        .large-col-line {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .vh-100 {
+        min-height: 500px;
+    }
+
+    .full-page {
+        .all-cards {
+            .card {
+                .card-text {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .home {
+            .jumbo-head {
+                .headline-thin {
+                    font-size: 1.5rem;
+                }
+
+                .headline-med {
+                    font-size: 2.3rem;
+                }
+            }
+
+            .hero-right-container {
+                .header-box {
+                    width: 40%;
+
+                    // height: 40%;
+               
+                }
+
+                #light-header-box {
+                    left: 20%;
+                }
+
+                #mid-header-box {
+                    width: 22%;
+
+                    // height: 30%;
+                    left: 38%;
+                }
+
+                #dark-header-box {
+                    left: 38%;
+                }
+            }
+
+            .section-third {
+                #left-text-container {
+                    right: 6%;
+                    width: 50%;
+
+                    .section-three-small-col {
+                        #line-1 {
+                            font-size: 2rem;
+                        }
+
+                        #line-2 {
+                            font-size: 4rem;
+                        }
+
+                        #line-3 {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+
+                #right-text-container {
+                    .section-three-large-col {
+                        .large-col-line {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {}
