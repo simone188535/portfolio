@@ -43,17 +43,11 @@ html, body {
     max-height: 720px;
 }
 
-//   .container-fluid {
-//     min-height: 100%;
-//   }
-// .page-bg-color{
-//     // background: #EBEAE9;
-//     background: $pale-peach;
-// }
+
 .full-page {
     max-width: 1440px;
     margin: 0 auto;
-    
+
     .primary-color-light {
         color: $green;
     }
@@ -412,7 +406,7 @@ html, body {
         }
 
         .right-hero {
-            background: $soft-black;
+            background: $pale-peach;
 
             // background: #FEAD51;
             font-weight: 500;
@@ -503,6 +497,15 @@ html, body {
             .col-12 {
                 // background: papayawhip;
                 background: $red-orange;
+            }
+            ul.aspiration-list{
+                font-size: 1.7rem;
+                color: $black;
+                width: 70%;
+                margin: 0 auto;
+                font-weight: 300;
+                font-style: italic;
+                line-height: 2;
             }
         }
     }

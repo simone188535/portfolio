@@ -135,11 +135,11 @@ const About = () => {
                     <SubHeadComponent {...AboutTrigger2} />
                     <div className="row">
                         <div className="col-12">
-                            <div className="aspiration-list">
-                                <div id="aspiration-list-item-1" className="aspiration-item position-relative">I would like to become a full Stack JavaScript Developer (preferable the MERN stack).</div>
-                                <div id="aspiration-list-item-2" className="aspiration-item position-relative">I am currently learning Node.js, Express and  MongoDB. </div>
-                                <div id="aspiration-list-item-3" className="aspiration-item position-relative">In the future I would also like to create my own animation Library and put it on github. </div>
-                            </div>
+                            <ul className="aspiration-list">
+                                <li id="aspiration-list-item-1" className="aspiration-item position-relative">I would like to become a full Stack JavaScript Developer (preferable the MERN stack).</li>
+                                <li id="aspiration-list-item-2" className="aspiration-item position-relative">I am currently learning Node.js, Express and  MongoDB. </li>
+                                <li id="aspiration-list-item-3" className="aspiration-item position-relative">In the future I would also like to create my own animation Library and put it on github. </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
