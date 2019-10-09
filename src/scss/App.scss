@@ -418,6 +418,53 @@ html, body {
             font-weight: 300;
             margin-top: 3%;
         }
+        .pdf-button{
+            margin:  30px auto;
+            a{
+                .resume-button {
+                    height: 50px;
+                    width: 400px;
+                    border: $black solid 2px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 5px;
+                    font-size: 2rem;
+                    color: $black;
+                    margin: 0 auto;
+                    
+                    &:hover{
+                        color:$white;
+                        background: $vivid-orange;
+                        border: $vivid-orange solid 2px;
+                    }
+                }
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            
+        }
+    .about-me{
+        margin: 10% auto;
+        
+        // .col-12{
+        //     // padding: 0;
+        //     // background: papayawhip;
+        // }
+        #about-me-left{
+            opacity: 0;
+             left: 0%;
+        }
+        #about-me-right{
+            opacity: 0;
+            right: 0%;
+        }
+        #personal-text-container{
+            font-size: 1.5rem;
+            // left: -70px;
+            // color:$green;
+        }
+    }
     }
 }
 
