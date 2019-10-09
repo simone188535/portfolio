@@ -37,11 +37,11 @@ const About = () => {
         if (isInViewport($(aboutMeIdent))) {
             tl.to($('#about-me-left'), .5, {
                 opacity: 1,
-                x: "10%"
+                x: 30
             }, "sameTime")
                 .to($('#about-me-right'), .5, {
                     opacity: 1,
-                    x: "-10%"
+                    x: -30
                 }, "sameTime");
         }
 

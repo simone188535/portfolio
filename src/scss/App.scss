@@ -370,6 +370,7 @@ html, body {
     }
 
     .about {
+        overflow: hidden;
         .hero-section {
             height: 530px;
 
@@ -476,12 +477,12 @@ html, body {
             // }
             #about-me-left {
                 opacity: 0;
-                left: 0%;
+                left: -30px;
             }
 
             #about-me-right {
                 opacity: 0;
-                right: 0%;
+                left: 30px;
             }
 
             #personal-text-container {
@@ -506,6 +507,7 @@ html, body {
                 font-weight: 300;
                 font-style: italic;
                 line-height: 2;
+                padding: 5% 0;
             }
         }
     }
