@@ -47,7 +47,7 @@ html, body {
     max-width: 1440px;
     margin: 0 auto;
 
-    .bg-orange-red {
+    .bg-red-orange {
         // background: rgb(248,248,248);
         background: $red-orange;
 
@@ -498,6 +498,18 @@ html, body {
                 font-style: italic;
                 line-height: 2;
                 padding: 0% 5% 5%;
+            }
+        }
+    }
+    .work{
+        .hero-section{
+            height: 530px;
+            .hero-text{
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                font-weight: 500;
+                font-size: 7rem;
             }
         }
     }

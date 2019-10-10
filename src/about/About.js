@@ -130,7 +130,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid bg-orange-red">
+            <div className="container-fluid bg-red-orange">
                 <div className="aspiration-section">
                     <SubHeadComponent {...AboutTrigger2} />
                     <div className="row">
