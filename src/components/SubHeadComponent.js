@@ -14,7 +14,7 @@ const SubHeadComponent = (props) => {
 
         if (isInViewport($(ident))) {
 
-            return TweenMax.to($(ident), 1.8, { y: 30, opacity: 1 });
+            return TweenMax.to($(ident), 1.8, { y: 20, opacity: 1 });
             // console.log('is active');
 
         }

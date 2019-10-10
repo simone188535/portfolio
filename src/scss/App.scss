@@ -43,10 +43,17 @@ html, body {
     max-height: 720px;
 }
 
-
 .full-page {
     max-width: 1440px;
     margin: 0 auto;
+
+    .bg-orange-red {
+        // background: rgb(248,248,248);
+        background: $red-orange;
+
+        // background:$soft-black;
+   
+    }
 
     .primary-color-light {
         color: $green;
@@ -186,22 +193,7 @@ html, body {
         .bg-gold {
             background: $gold;
         }
-
-        .bg-pink {
-            background: #e67b77;
-
-            // background: $orange;
-       
-        }
-
-        .bg-orange-red {
-            // background: rgb(248,248,248);
-            background: $red-orange;
-
-            // background:$soft-black;
-       
-        }
-
+        
         .bg-pale-peach {
             // background: rgb(248,248,248);
             // background: $red-orange;
@@ -371,6 +363,7 @@ html, body {
 
     .about {
         overflow: hidden;
+
         .hero-section {
             height: 530px;
 
@@ -495,19 +488,16 @@ html, body {
         }
 
         .aspiration-section {
-            .col-12 {
-                // background: papayawhip;
-                background: $red-orange;
-            }
-            ul.aspiration-list{
+
+            ul.aspiration-list {
                 font-size: 1.7rem;
-                color: $black;
+                color: $pale-peach;
                 width: 70%;
                 margin: 0 auto;
                 font-weight: 300;
                 font-style: italic;
                 line-height: 2;
-                padding: 5% 0;
+                padding: 0% 5% 5%;
             }
         }
     }
@@ -538,6 +528,20 @@ html, body {
                 #dark-header-box {
                     left: 34%;
                 }
+            }
+        }
+
+        .about {
+            #hero-text-left {
+                font-size: 3.5rem;
+            }
+
+            .hero-text-right-top {
+                font-size: 2.5rem;
+            }
+
+            .hero-text-right-bottom {
+                font-size: 1.3rem;
             }
         }
     }
@@ -692,6 +696,14 @@ html, body {
                 }
             }
         }
+
+        .about {
+            .aspiration-section {
+                ul.aspiration-list {
+                    padding: 0% 0% 5%;
+                }
+            }
+        }
     }
 }
 
@@ -759,6 +771,45 @@ html, body {
                             font-size: 3rem;
                         }
                     }
+                }
+            }
+        }
+
+        .about {
+            #hero-text-left {
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            #hero-text-right {
+                top: 25%;
+            }
+
+            .hero-text-right-top {
+                font-size: 2.5rem;
+            }
+
+            .hero-text-right-bottom {
+                font-size: 1.3rem;
+            }
+
+            .about-me{
+                #personal-img{
+                    width: 50%;
+                    margin: 0 auto;
+                    display: block;
+                }
+            
+                #personal-text-container{
+                    font-size: 1.2rem;
+                    margin-top: 5%;
+                    padding: 0 10%;
+                }
+            }
+            .aspiration-section {
+                ul.aspiration-list {
+                    font-size: 1.3rem;
+                    margin-top: 5px;
                 }
             }
         }
@@ -840,6 +891,42 @@ html, body {
                         .large-col-line {
                             font-size: 2rem;
                         }
+                    }
+                }
+            }
+        }
+
+        .about {
+            .hero-text {
+                width: 85%;
+            }
+
+            #hero-text-right {
+                top: 35%;
+            }
+
+            .hero-text-right-top {
+                font-size: 2rem;
+            }
+
+            .hero-text-right-bottom {
+                font-size: 1.3rem;
+            }
+
+            .pdf-button {
+                a {
+                    .resume-button {
+                        width: 250px;
+                    }
+                }
+            }
+
+            .aspiration-container {
+                z-index: -1;
+                .aspiration-section {
+                    ul.aspiration-list {
+                        font-size: 1.3rem;
+                        margin-top: 5px;
                     }
                 }
             }

@@ -114,10 +114,10 @@ const About = () => {
                 <div id="about-me-trigger" className="about-me">
 
                     <div className="row">
-                        <div id="about-me-left" className="col-md-4 offset-md-1 position-relative">
+                        <div id="about-me-left" className="col-md-4 offset-md-2  position-relative">
                             <img id="personal-img" className="img-fluid" src="https://dgpr.s3.amazonaws.com/images/project/profile-anonymous.jpg" alt="Simone Anthony" />
                         </div>
-                        <div id="about-me-right" className="col-md-4 offset-md-2 position-relative">
+                        <div id="about-me-right" className="col-md-4  position-relative">
 
                             <div id="personal-text-container">
                                 <h2>Me</h2>
@@ -130,11 +130,11 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid ">
+            <div className="container-fluid bg-orange-red">
                 <div className="aspiration-section">
                     <SubHeadComponent {...AboutTrigger2} />
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 aspiration-container">
                             <ul className="aspiration-list">
                                 <li id="aspiration-list-item-1" className="aspiration-item position-relative">I would like to become a full Stack JavaScript Developer (preferable the MERN stack).</li>
                                 <li id="aspiration-list-item-2" className="aspiration-item position-relative">I am currently learning Node.js, Express and  MongoDB. </li>
