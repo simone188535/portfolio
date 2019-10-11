@@ -11,7 +11,10 @@ const Work = () => {
        
         if (isInViewport($(heroIdent))) {
             const tl = new TimelineLite();
-            tl.to($('#work-hero-text'), 1, { opacity: 1 })
+            tl.to($('#work-hero-text'), 1, { 
+                opacity: 1,
+                y:-20 
+            })
             .to($('#scaling-period'),.5,{
                 opacity:1
             });
@@ -42,9 +45,10 @@ const Work = () => {
                         <div className="hero-section w-100">
                             <div className="h-100" id="hero-content">
                                 <div className="hero-text position-relative h-100">
-                                    <div className="hero-text-container position-absolute">
-                                    <div id="work-hero-text" className="float-left">Work</div>
-                                    <div id="scaling-period" className="float-left"></div>
+                                    <div className="hero-text-container position-relative">
+                                    <div  id="work-hero-text">Work <span id="scaling-period" className="position-relative">.</span></div>
+                                     {/* <div id="work-hero-text" className="float-left">Work</div> */}
+                                   {/* <div id="scaling-period" className="float-left"></div> */}
                                     </div>
                                 </div>
 

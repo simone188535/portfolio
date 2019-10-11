@@ -502,9 +502,6 @@ html, body {
     }
 
     .work {
-        // .bg-work-hero{
-        //     background: $red-orange;
-        // }
         .hero-section {
             height: 530px;
 
@@ -520,19 +517,24 @@ html, body {
                     opacity: 0;
                 }
                 #scaling-period {
-                    background: $off-white;
+                    // background: $off-white;
                     opacity: 0;
-                    width: 10px;
-                    height: 10px;
-                    position: absolute;
-                    bottom: 27%;
-                    right: -10%;
-                    border-radius: 50%;
+                    // width: 10px;
+                    // height: 10px;
+                    // position: absolute;
+                    // bottom: 27%;
+                    // right: 33%;
+                    // border-radius: 50%;
+                    color: $off-white;
+                    right: 1.5%;
                 }
 
                 .hero-text-container {
                     top: 45%;
-                    left: 42%;
+                    // text-align: center;
+                    // width: 50%;
+                    // margin: 0 auto;
+                    // left: 42%;
                 }
             }
         }
@@ -648,6 +650,16 @@ html, body {
                             font-size: 6rem;
                         }
                     }
+                }
+            }
+        }
+        .work {
+            .hero-section {
+    
+                .hero-text {
+                    font-size: 6rem;
+                    
+                   
                 }
             }
         }
@@ -850,6 +862,19 @@ html, body {
                 }
             }
         }
+        .work {
+            .hero-section {
+    
+                .hero-text {
+                    font-size: 5rem;
+                   
+                    #scaling-period{
+                        right: 2.5%;
+                    } 
+                   
+                }
+            }
+        }
     }
 }
 
@@ -969,6 +994,20 @@ html, body {
                 }
             }
         }
+        .work {
+            .hero-section {
+    
+                .hero-text {
+                    font-size: 3.7rem;
+                   
+                    #scaling-period{
+                        right: 3%;
+                    } 
+                   
+                }
+            }
+        }
+    
     }
 }
 
