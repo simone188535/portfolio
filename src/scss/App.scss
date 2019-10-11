@@ -193,7 +193,7 @@ html, body {
         .bg-gold {
             background: $gold;
         }
-        
+
         .bg-pale-peach {
             // background: rgb(248,248,248);
             // background: $red-orange;
@@ -488,7 +488,6 @@ html, body {
         }
 
         .aspiration-section {
-
             ul.aspiration-list {
                 font-size: 1.7rem;
                 color: $pale-peach;
@@ -501,20 +500,35 @@ html, body {
             }
         }
     }
-    .work{
+
+    .work {
         // .bg-work-hero{
         //     background: $red-orange;
         // }
-        .hero-section{
+        .hero-section {
             height: 530px;
-    
-            .hero-text{
+
+            .hero-text {
                 // top: 50%;
                 width: 100%;
                 text-align: center;
                 font-weight: 500;
                 font-size: 7rem;
                 color: $black;
+                
+                #work-hero-text{
+                    opacity: 0;
+                }
+                #scaling-period {
+                    background: $off-white;
+                    opacity: 0;
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    bottom: 27%;
+                    right: -10%;
+                    border-radius: 50%;
+                }
 
                 .hero-text-container {
                     top: 45%;
@@ -815,19 +829,20 @@ html, body {
                 font-size: 1.3rem;
             }
 
-            .about-me{
-                #personal-img{
+            .about-me {
+                #personal-img {
                     width: 50%;
                     margin: 0 auto;
                     display: block;
                 }
-            
-                #personal-text-container{
+
+                #personal-text-container {
                     font-size: 1.2rem;
                     margin-top: 5%;
                     padding: 0 10%;
                 }
             }
+
             .aspiration-section {
                 ul.aspiration-list {
                     font-size: 1.3rem;
@@ -945,6 +960,7 @@ html, body {
 
             .aspiration-container {
                 z-index: -1;
+
                 .aspiration-section {
                     ul.aspiration-list {
                         font-size: 1.3rem;

@@ -13,11 +13,7 @@ const About = () => {
 
         const tl = new TimelineLite();
         if (isInViewport($(heroIdent1))) {
-            // heroLeftAnimation();
 
-            // tl.to($('#bottom-to-top'), .5, {
-            //     height: "100%"
-            // })
             tl.to($('#hero-text-left'), 1.5, {
                 opacity: 1
             });

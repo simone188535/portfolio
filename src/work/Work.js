@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { TimelineLite } from "gsap/TweenMax";
+import { TweenMax,TimelineLite } from "gsap/TweenMax";
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import SubHeadComponent from '../components/SubHeadComponent';
@@ -7,10 +7,21 @@ import SubHeadComponent from '../components/SubHeadComponent';
 
 const Work = () => {
 
+    const heroAnimation = (heroIdent) =>{
+       
+        if (isInViewport($(heroIdent))) {
+            const tl = new TimelineLite();
+            tl.to($('#work-hero-text'), 1, { opacity: 1 })
+            .to($('#scaling-period'),.5,{
+                opacity:1
+            });
+        }
+    }
 
     const allAnimation = () => {
-        console.log('working');
+        heroAnimation('#hero-content');
     }
+   
     const workTrigger = {
         ident: 'workTrigger',
         text: 'Previous Clients'
@@ -31,8 +42,10 @@ const Work = () => {
                         <div className="hero-section w-100">
                             <div className="h-100" id="hero-content">
                                 <div className="hero-text position-relative h-100">
-                                    <div className="hero-text-container position-absolute"><div className="float-left">Work</div><div className="float-left">.</div></div>
-                                    {/* <div id="scaling-period" className=""></div> */}
+                                    <div className="hero-text-container position-absolute">
+                                    <div id="work-hero-text" className="float-left">Work</div>
+                                    <div id="scaling-period" className="float-left"></div>
+                                    </div>
                                 </div>
 
 
