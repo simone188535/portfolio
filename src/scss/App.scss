@@ -502,14 +502,24 @@ html, body {
         }
     }
     .work{
+        // .bg-work-hero{
+        //     background: $red-orange;
+        // }
         .hero-section{
             height: 530px;
+    
             .hero-text{
-                top: 50%;
+                // top: 50%;
                 width: 100%;
                 text-align: center;
                 font-weight: 500;
                 font-size: 7rem;
+                color: $black;
+
+                .hero-text-container {
+                    top: 45%;
+                    left: 42%;
+                }
             }
         }
     }
