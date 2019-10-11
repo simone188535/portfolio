@@ -3,6 +3,7 @@ import { TweenMax,TimelineLite } from "gsap/TweenMax";
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import SubHeadComponent from '../components/SubHeadComponent';
+import ClientCardContainerComponent from '../components/ClientCardContainerComponent';
 
 
 const Work = () => {
@@ -61,7 +62,7 @@ const Work = () => {
             </div>
             <div className="container">
                 <SubHeadComponent {...workTrigger} />
-                {/* <ClientCardContainerComponent ident="first-card-container" /> */}
+                <ClientCardContainerComponent ident="work-card-container" />
                 <div className="row">
 
                 </div>
