@@ -8,7 +8,7 @@ import { heroRightAnimation } from './js/heroRightAnimation';
 import { heroLeftAnimation } from './js/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
 import SubHeadComponent from './components/SubHeadComponent';
-import CardContainerComponent from './components/CardContainerComponent';
+import SkillsCardContainerComponent from './components/SkillsCardContainerComponent';
 
 
 const Homepage = () => {
@@ -35,19 +35,19 @@ const Homepage = () => {
     //     }
     // };
 
-    const staggerCards = (ident) => {
+    // const staggerCards = (ident) => {
 
-        // const tl = new TimelineLite();
+    //     // const tl = new TimelineLite();
 
-        //only activates in Viewpoint when parent Id (ident) is correct.
-        //It uses css selector syntax to determine which card section  should be selected
+    //     //only activates in Viewpoint when parent Id (ident) is correct.
+    //     //It uses css selector syntax to determine which card section  should be selected
 
-        if (isInViewport($(ident))) {
-            // console.log(ident);
-            // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
-            return TweenMax.staggerTo(ident + ".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.3);
-        }
-    };
+    //     if (isInViewport($(ident))) {
+    //         // console.log(ident);
+    //         // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
+    //         return TweenMax.staggerTo(ident + ".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.3);
+    //     }
+    // };
 
     const finalSection = (ident1) => {
         const tl = new TimelineLite();
@@ -61,7 +61,7 @@ const Homepage = () => {
 
         heroAnimation('#hero-left', '#hero-right');
 
-        staggerCards('#first-card-container');
+        // staggerCards('#first-card-container');
 
         //This may seem redundant but it is done for accuracy. 
         // subSectionHeadAnimation('#trigger1');
@@ -108,7 +108,7 @@ const Homepage = () => {
                 {/* <div className=" vh-100 bg-white"> */}
                 <div className="section-second">
                     <SubHeadComponent {...SubHeadTrigger} />
-                    <CardContainerComponent ident="first-card-container" />
+                    <SkillsCardContainerComponent ident="first-card-container" />
 
                 </div>
 
