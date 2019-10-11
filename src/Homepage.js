@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from 'react';
 import React, { useEffect } from 'react';
-import { TimelineLite, TweenMax } from "gsap/TweenMax";
+import { TimelineLite } from "gsap/TweenMax";
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
@@ -24,31 +24,7 @@ const Homepage = () => {
 
     };
 
-    // const subSectionHeadAnimation = (ident) => {
-
-    //     // const tl = new TimelineLite();
-
-    //     if (isInViewport($(ident))) {
-
-    //         return TweenMax.to($(ident), 1.8, { y: 30, opacity: 1 });
-
-    //     }
-    // };
-
-    // const staggerCards = (ident) => {
-
-    //     // const tl = new TimelineLite();
-
-    //     //only activates in Viewpoint when parent Id (ident) is correct.
-    //     //It uses css selector syntax to determine which card section  should be selected
-
-    //     if (isInViewport($(ident))) {
-    //         // console.log(ident);
-    //         // return tl.staggerTo(".all-cards" + ident + " > .card", 2, { y: 30, opacity: 1 }, 0.25);
-    //         return TweenMax.staggerTo(ident + ".all-cards  .card", 2, { y: 15, opacity: 1 }, 0.3);
-    //     }
-    // };
-
+ 
     const finalSection = (ident1) => {
         const tl = new TimelineLite();
 
@@ -58,15 +34,11 @@ const Homepage = () => {
     }
 
     const allAnimation = () => {
-
         heroAnimation('#hero-left', '#hero-right');
 
         // staggerCards('#first-card-container');
-
-        //This may seem redundant but it is done for accuracy. 
         // subSectionHeadAnimation('#trigger1');
-        // subSectionHeadAnimation('#trigger2');
-        // subSectionHeadAnimation('#trigger3');
+
         finalSection('#left-text-container', '#right-text-container');
 
         return false;
@@ -104,21 +76,16 @@ const Homepage = () => {
                     </div>
 
                 </div>
-
-                {/* <div className=" vh-100 bg-white"> */}
                 <div className="section-second">
                     <SubHeadComponent {...SubHeadTrigger} />
                     <SkillsCardContainerComponent ident="first-card-container" />
 
                 </div>
 
-
-                {/* <div className=" vh-100 bg-gold"> */}
                 <div className="section-third position-relative">
                     <div className="row">
                         <div className="col-md-4 bg-red-orange vh-100 three-line-container">
                             <div id="left-text-container" className="position-relative">
-                                {/* <img  class="img-fluid" src="https://dgpr.s3.amazonaws.com/images/project/photo-1510148199876-8a856ee41d42.jpeg" /> */}
                                 <div className="section-three-small-col">
                                     <div id="line-1" className="small-col-line">Want to</div>
                                     <div id="line-2" className="small-col-line">Learn</div>
