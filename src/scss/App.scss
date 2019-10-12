@@ -497,6 +497,12 @@ html, body {
                 font-style: italic;
                 line-height: 2;
                 padding: 0% 5% 5%;
+                list-style: none;
+
+                li::before {
+                    content: "• ";
+                    color: $black;
+                }
             }
         }
     }
@@ -512,13 +518,15 @@ html, body {
                 font-weight: 500;
                 font-size: 7rem;
                 color: $black;
-                
-                #work-hero-text{
+
+                #work-hero-text {
                     opacity: 0;
                 }
+
                 #scaling-period {
                     // background: $off-white;
                     opacity: 0;
+
                     // width: 10px;
                     // height: 10px;
                     // position: absolute;
@@ -531,11 +539,30 @@ html, body {
 
                 .hero-text-container {
                     top: 45%;
+
                     // text-align: center;
                     // width: 50%;
                     // margin: 0 auto;
                     // left: 42%;
+               
                 }
+            }
+        }
+
+        .client-card {
+            position: relative;
+            height: 150px;
+            img {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 150px;
+
+                // display: block;
+                // margin: 0 auto;
             }
         }
     }
@@ -653,13 +680,11 @@ html, body {
                 }
             }
         }
+
         .work {
             .hero-section {
-    
                 .hero-text {
                     font-size: 6rem;
-                    
-                   
                 }
             }
         }
@@ -862,16 +887,15 @@ html, body {
                 }
             }
         }
+
         .work {
             .hero-section {
-    
                 .hero-text {
                     font-size: 5rem;
-                   
-                    #scaling-period{
+
+                    #scaling-period {
                         right: 2.5%;
-                    } 
-                   
+                    }
                 }
             }
         }
@@ -994,20 +1018,18 @@ html, body {
                 }
             }
         }
+
         .work {
             .hero-section {
-    
                 .hero-text {
                     font-size: 3.7rem;
-                   
-                    #scaling-period{
+
+                    #scaling-period {
                         right: 3%;
-                    } 
-                   
+                    }
                 }
             }
         }
-    
     }
 }
 

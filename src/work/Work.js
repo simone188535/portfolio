@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { TweenMax,TimelineLite } from "gsap/TweenMax";
+import {TimelineLite } from "gsap/TweenMax";
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import SubHeadComponent from '../components/SubHeadComponent';
@@ -60,11 +60,13 @@ const Work = () => {
 
                 </div>
             </div>
-            <div className="container">
+            <div className="container-fluid">
                 <SubHeadComponent {...workTrigger} />
-                <ClientCardContainerComponent ident="work-card-container" />
+                
                 <div className="row">
-
+                    <div className="container">
+                    <ClientCardContainerComponent ident="work-card-container" />
+                    </div>
                 </div>
             </div>
         </div>
