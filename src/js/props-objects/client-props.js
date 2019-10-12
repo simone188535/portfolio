@@ -1,7 +1,7 @@
 const clients = [
     {   
         id:1,
-        link:'',
+        link:'https://www.bevmo.com/',
         img: '/images/logos/bevmo.jpg',
         alt: 'Bevmo'
     },

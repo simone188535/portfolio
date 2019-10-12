@@ -113,7 +113,7 @@ const About = () => {
 
                     <div className="row">
                         <div id="about-me-left" className="col-md-4 offset-md-2  position-relative">
-                            <img id="personal-img" className="img-fluid" src="https://dgpr.s3.amazonaws.com/images/project/profile-anonymous.jpg" alt="Simone Anthony" />
+                            <img id="personal-img" className="img-fluid" src="/images/me.jpg" alt="Simone Anthony" />
                         </div>
                         <div id="about-me-right" className="col-md-4  position-relative">
 
