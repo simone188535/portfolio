@@ -464,10 +464,6 @@ html, body {
         .about-me {
             margin: 10% auto;
 
-            // .col-12{
-            //     // padding: 0;
-            //     // background: papayawhip;
-            // }
             #about-me-left {
                 opacity: 0;
                 left: -30px;
@@ -549,20 +545,25 @@ html, body {
             }
         }
 
-        .client-card {
-            position: relative;
-            height: 150px;
-            img {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                width: 150px;
+        .client-card-container {
+            margin-bottom: 5%;
+            .client-card {
+                position: relative;
+                height: 150px;
 
-                // display: block;
-                // margin: 0 auto;
+                img {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    width: 150px;
+
+                    // display: block;
+                    // margin: 0 auto;
+               
+                }
             }
         }
     }
