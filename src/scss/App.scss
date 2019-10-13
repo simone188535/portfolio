@@ -84,7 +84,7 @@ html, body {
         background: $white;
         transition: background-color 1s ease-out;
 
-        .nav-item.active .nav-link {
+        .active .nav-link {
             &:hover {
                 color: $black;
             }
@@ -92,7 +92,7 @@ html, body {
             color: $black;
         }
 
-        .nav-item .nav-link {
+         .nav-link {
             &:hover {
                 color: rgba(28, 27, 32, 0.5);
             }
@@ -105,7 +105,11 @@ html, body {
         background: $black;
         transition: background-color 1s ease-out;
 
-        .nav-item.active .nav-link {
+        .navbar-toggler{
+            border-color: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .active .nav-link {
             &:hover {
                 color: $white;
             }
@@ -113,7 +117,7 @@ html, body {
             color: $white;
         }
 
-        .nav-item .nav-link {
+         .nav-link {
             &:hover {
                 color: rgba(248, 248, 248, 0.8);
             }

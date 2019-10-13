@@ -15,7 +15,7 @@ import './scss/App.scss';
 
 const App = () => {
     return (
-        <div className="page-bg-color full-page">
+        <div className="full-page">
             <BrowserRouter>
             <GlobalNav />
                 <div>
