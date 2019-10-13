@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
+import { Row, Col } from 'react-bootstrap';
+
 import { isInViewport } from '../js/isInViewport';
 import { TweenMax } from "gsap/TweenMax";
 
@@ -32,13 +34,13 @@ const SubHeadComponent = (props) => {
     });
 
     return (
-        <div className="row">
-            <div className="col-12">
+        <Row>
+            <Col xs={12}>
                 <h2 id={ident} className="text-center sub-section-header">
                     {text}
                 </h2>
-            </div>
-        </div>);
+            </Col>
+        </Row>);
 }
 
 export default SubHeadComponent;

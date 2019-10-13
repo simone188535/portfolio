@@ -62,14 +62,14 @@ const Homepage = () => {
         <div className="home">
             <Container fluid={true}>
                 <Row className="jumbo-head section-one" >
-                    <Col id="hero-left" md="6" className="vh-100 bg-red-orange position-relative">
+                    <Col id="hero-left" md={6} className="vh-100 bg-red-orange position-relative">
                         <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
                             <div className="header-thin primary-dark-color headline-thin">Hello. My name is ...</div>
                             <h1 className="header-medium white headline-med">Simone Anthony</h1>
                             <div className="header-medium primary-dark-color headline-med">Full Stack Web Developer.</div>
                         </div>
                     </Col>
-                    <Col id="hero-right" md="6" className="vh-100 secondary-background position-relative hero-right-container">
+                    <Col id="hero-right" md={6} className="vh-100 secondary-background position-relative hero-right-container">
                         <div id="circle-to-bg" className="position-absolute" ></div>
                         <div id="light-header-box" className="header-box position-absolute all-boxes"></div>
                         <div id="mid-header-box" className="position-absolute all-boxes"></div>
@@ -86,7 +86,7 @@ const Homepage = () => {
 
                 <div className="section-third position-relative">
                     <Row>
-                        <Col md="4" className="bg-red-orange vh-100 three-line-container">
+                        <Col md={4} className="bg-red-orange vh-100 three-line-container">
                             <div id="left-text-container" className="position-relative">
                                 <div className="section-three-small-col">
                                     <div id="line-1" className="small-col-line">Want to</div>
@@ -95,7 +95,7 @@ const Homepage = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col md="8" className="bg-pale-peach vh-100">
+                        <Col md={8} className="bg-pale-peach vh-100">
 
                             <div id="right-text-container" className="position-relative">
                                 <div className="section-three-large-col">
