@@ -3,12 +3,14 @@ import React, { useEffect } from 'react';
 import { TimelineLite } from "gsap/TweenMax";
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
+import { Container, Row } from 'react-bootstrap';
 
 import { heroRightAnimation } from './js/heroRightAnimation';
 import { heroLeftAnimation } from './js/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
 import SubHeadComponent from './components/SubHeadComponent';
 import SkillsCardContainerComponent from './components/SkillsCardContainerComponent';
+
 
 
 const Homepage = () => {
@@ -58,8 +60,8 @@ const Homepage = () => {
 
     return (
         <div className="home">
-            <div className="container-fluid ">
-                <div className="row jumbo-head section-one" >
+            <Container fluid={true}>
+                <Row className="jumbo-head section-one" >
                     <div id="hero-left" className="col-md-6 vh-100 bg-red-orange position-relative">
                         <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
                             <div className="header-thin primary-dark-color headline-thin">Hello. My name is ...</div>
@@ -75,7 +77,7 @@ const Homepage = () => {
 
                     </div>
 
-                </div>
+                </Row>
                 <div className="section-second">
                     <SubHeadComponent {...SubHeadTrigger} />
                     <SkillsCardContainerComponent ident="first-card-container" />
@@ -83,7 +85,7 @@ const Homepage = () => {
                 </div>
 
                 <div className="section-third position-relative">
-                    <div className="row">
+                    <Row>
                         <div className="col-md-4 bg-red-orange vh-100 three-line-container">
                             <div id="left-text-container" className="position-relative">
                                 <div className="section-three-small-col">
@@ -103,9 +105,9 @@ const Homepage = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Row>
                 </div>
-            </div>
+            </Container>
         </div>
     );
     // }
