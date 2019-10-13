@@ -60,7 +60,7 @@ const Homepage = () => {
         <div className="home">
             <div className="container-fluid ">
                 <div className="row jumbo-head section-one" >
-                    <div id="hero-left" className="col-md-6 vh-100 primary-background position-relative">
+                    <div id="hero-left" className="col-md-6 vh-100 bg-red-orange position-relative">
                         <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
                             <div className="header-thin primary-dark-color headline-thin">Hello. My name is ...</div>
                             <h1 className="header-medium white headline-med">Simone Anthony</h1>

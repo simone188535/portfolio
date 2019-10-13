@@ -48,11 +48,19 @@ html, body {
     margin: 0 auto;
 
     .bg-red-orange {
-        // background: rgb(248,248,248);
         background: $red-orange;
-
-        // background:$soft-black;
-   
+    }
+    .bg-soft-black{
+        background:$soft-black;
+    }
+    .bg-off-white{
+        background:$off-white;
+    }
+    .bg-pale-peach{
+        background:$pale-peach;
+    }
+    .bg-black{
+        background:$black;
     }
 
     .primary-color-light {
@@ -190,16 +198,6 @@ html, body {
             background: $white;
         }
 
-        .bg-gold {
-            background: $gold;
-        }
-
-        .bg-pale-peach {
-            // background: rgb(248,248,248);
-            // background: $red-orange;
-            background: $pale-peach;
-        }
-
         .hero-right-container {
             #circle-to-bg {
                 top: 60%;
@@ -244,7 +242,7 @@ html, body {
                 width: 22%;
                 height: 30%;
                 z-index: 3;
-                max-width: 170px;
+                // max-width: 170px;
 
                 //max-width: 170px;
 
@@ -567,6 +565,37 @@ html, body {
                     // margin: 0 auto;
                
                 }
+            }
+        }
+    }
+    .contact{
+        .left-section{
+            .left-text-container{
+                top: 50%;
+                color: $white;
+                .all-details{
+                    width: 80%;
+                    margin:0 auto;
+
+                    .details{
+                        width: 50%;
+                        .first-half{
+                            
+                        }
+                        .second-half{
+
+                        }
+                    }
+                }
+            }
+        }
+        .right-section{
+            .right-text-container{
+                top:50%;
+                width: 100%;
+                text-align: center;
+                font-size: 3.5rem;
+                color: $black;
             }
         }
     }
