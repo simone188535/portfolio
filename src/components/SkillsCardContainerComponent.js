@@ -3,7 +3,7 @@ import _ from 'lodash';
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import { TweenMax } from "gsap/TweenMax";
-import { Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import skillsArray from '../js/props-objects/skills-props';
 
 
@@ -57,12 +57,12 @@ const SkillsCardContainerComponent = (props) => {
     });
     return (
         <div id={ident} className="all-cards">
-            <div className="container">
-                <div className="row ">
+            <Container>
+                <Row>
                     {makeCard(skillsArray.skills)}
-                </div>
-            </div>
-
-        </div>);
+                </Row>
+            </Container>
+        </div>
+    );
 }
 export default SkillsCardContainerComponent;
