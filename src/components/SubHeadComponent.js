@@ -35,7 +35,7 @@ const SubHeadComponent = (props) => {
 
     return (
         <Row>
-            <Col xs={12}>
+            <Col>
                 <h2 id={ident} className="text-center sub-section-header">
                     {text}
                 </h2>
