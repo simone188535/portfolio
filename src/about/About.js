@@ -1,52 +1,36 @@
 import React, { useEffect } from 'react';
-import { TimelineLite } from "gsap/TweenMax";
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import SubHeadComponent from '../components/SubHeadComponent';
 import PDFDisplayButtonComponent from '../components/PDFDisplayButtonComponent';
-// import SubHeadComponent from './components/SubHeadComponent';
+
+import aboutHeroAnimationLeft from '../js/about/aboutHeroAnimationLeft';
+import aboutHeroAnimationRight from '../js/about/aboutHeroAnimationRight';
+import aboutMeSectionAnimation from '../js/about/aboutMeSectionAnimation';
 
 
 const About = () => {
 
     const aboutHeroAnimation = (heroIdent1, heroIdent2) => {
 
-        const tl = new TimelineLite();
         if (isInViewport($(heroIdent1))) {
-
-            tl.to($('#hero-text-left'), 1.5, {
-                opacity: 1
-            });
-
+            aboutHeroAnimationLeft();
         }
         if (isInViewport($(heroIdent2))) {
-            tl.to($('#top-to-bottom'), .5, {
-                height: "100%"
-
-            }, "-=1")
-                .to($('#hero-text-right'), .5, {
-                    opacity: 1,
-                    y:-10
-                });
+            aboutHeroAnimationRight();
         }
+       
     }
-    const aboutMeSectionAnimation = (aboutMeIdent) => {
-        const tl = new TimelineLite();
+    const aboutMeSectionAnimationActivate = (aboutMeIdent) => {
+        
         if (isInViewport($(aboutMeIdent))) {
-            tl.to($('#about-me-left'), .5, {
-                opacity: 1,
-                x: 30
-            }, "sameTime")
-                .to($('#about-me-right'), .5, {
-                    opacity: 1,
-                    x: -30
-                }, "sameTime");
+            aboutMeSectionAnimation();
         }
 
     }
     const allAnimation = () => {
         aboutHeroAnimation('#left-hero-content', '#right-hero-content');
-        aboutMeSectionAnimation('#about-me-trigger');
+        aboutMeSectionAnimationActivate('#about-me-trigger');
     }
     const AboutTrigger = {
         ident: 'aboutTrigger1',

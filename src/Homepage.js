@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import { Container, Row } from 'react-bootstrap';
 
-import { heroRightAnimation } from './js/heroRightAnimation';
-import { heroLeftAnimation } from './js/heroLeftAnimation';
+import { heroRightAnimation } from './js/home/heroRightAnimation';
+import { heroLeftAnimation } from './js/home/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
 import SubHeadComponent from './components/SubHeadComponent';
 import SkillsCardContainerComponent from './components/SkillsCardContainerComponent';
