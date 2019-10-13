@@ -3,11 +3,12 @@ import _ from 'lodash';
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import { TweenMax } from "gsap/TweenMax";
+import { Col, Card } from 'react-bootstrap';
 import skillsArray from '../js/props-objects/skills-props';
 
 
 const SkillsCardContainerComponent = (props) => {
-    
+
     let { ident } = props;
 
     const makeCard = (arrayValue) => {
@@ -15,12 +16,15 @@ const SkillsCardContainerComponent = (props) => {
         const results = _.map(arrayValue, (arrayIndex) => {
             return (
                 //    console.log(arrayIndex);
-                <div key={arrayIndex.id} className="card col-6 col-md-3">
-                    <img className="card-img-top img-fluid" src={arrayIndex.img} alt={arrayIndex.alt} />
-                    <div className="card-body">
-                        <p className="card-text text-center">{arrayIndex.description}</p>
-                    </div>
-                </div>
+
+                <Col xs={6} md={3} key={arrayIndex.id}>
+                    <Card>
+                        <Card.Img variant="top" src={arrayIndex.img} alt={arrayIndex.alt} />
+                        <Card.Body>
+                            <Card.Text className="text-center">{arrayIndex.description}</Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
             )
         }
 
@@ -42,14 +46,14 @@ const SkillsCardContainerComponent = (props) => {
     };
 
     const theAnimation = () => {
-        let identRef = '#'+ident;
+        let identRef = '#' + ident;
         staggerCards(identRef);
     }
 
     useEffect(() => {
         theAnimation();
         window.addEventListener('scroll', theAnimation);
-    
+
     });
     return (
         <div id={ident} className="all-cards">
