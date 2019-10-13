@@ -6,6 +6,10 @@ import About from './about/About';
 import Contact from './contact/Contact';
 import GlobalNav from './GlobalNav';
 import GlobalFooter from './GlobalFooter';
+// import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "bootstrap-css-only/css/bootstrap.min.css";
+// import "mdbreact/dist/css/mdb.css";
+
 
 import './scss/App.scss';
 

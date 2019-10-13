@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+// import { Link } from 'react-router-dom';
 
 
 
@@ -22,29 +23,35 @@ const Contact = () => {
                 <div className="row" >
                     <div className="col-md-6 vh-100 bg-soft-black left-section">
                         <div className="position-relative left-text-container">
-                            <div className="all-details">
-                                <div className="first-half">
-                                    <div className="float-left details">
-                                    <div className="detail-title">Phone</div>
-                                    <div className="detail-description">
-
+                            <div className="all-details row">
+                                <div className="half col-12">
+                                    <div className="float-left details col-6">
+                                        <div className="detail-title">Phone</div>
+                                        <div className="detail-description">
+                                            (404)-397-9523
+                                        </div>
                                     </div>
-                                    </div>
-                                    <div className="float-left details">
-                                    <div className="detail-title">Email</div>
-                                    <div className="detail-description"></div>
+                                    <div className="float-left details col-6">
+                                        <div className="detail-title">Email</div>
+                                        <div className="detail-description">
+                                            simone.anthony1@yahoo.com
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="second-half">
-                                    <div className="float-left details">
-                                    <div className="detail-title">City</div>
-                                    <div className="detail-description">
-                                        
+                                <div className="half col-12">
+                                    <div className="float-left details col-6">
+                                        <div className="detail-title">City</div>
+                                        <div className="detail-description">
+                                        Stone Mountain, Georgia
+                                        </div>
                                     </div>
-                                    </div>
-                                    <div className="float-left details">
-                                    <div className="detail-title">Follow</div>
-                                    <div className="detail-description"></div>
+                                    <div className="float-left details col-6">
+                                        <div className="detail-title">Follow</div>
+                                        <div className="detail-description">
+                                        <a href="https://www.linkedin.com/in/simone-anthony-059066136/" target="_blank" rel="noopener noreferrer">
+                                        <i className="fa fa-linkedin-square"></i>
+                                        </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

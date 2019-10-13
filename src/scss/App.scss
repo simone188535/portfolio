@@ -574,16 +574,28 @@ html, body {
                 top: 50%;
                 color: $white;
                 .all-details{
-                    width: 80%;
+                    width: 90%;
                     margin:0 auto;
-
+                     .half{
+                            margin-bottom: 5%;
+                        }
                     .details{
                         width: 50%;
-                        .first-half{
+                        // .first-half{
                             
+                        // }
+                        .detail-title{
+                            font-weight: 300;
                         }
-                        .second-half{
-
+                        .detail-description{
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                           a{ 
+                               color: $white;
+                            .fa-linkedin-square{
+                                font-size: 25px;
+                            }
+                        }
                         }
                     }
                 }
