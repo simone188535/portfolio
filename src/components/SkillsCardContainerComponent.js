@@ -20,7 +20,7 @@ const SkillsCardContainerComponent = (props) => {
 
                 <Col xs={6} md={3} key={arrayIndex.id}>
                     <Card>
-                        <Card.Img variant="top" src={arrayIndex.img} alt={arrayIndex.alt} />
+                        <Card.Img variant="top" className="img-fluid w-100" src={arrayIndex.img} alt={arrayIndex.alt} />
                         <Card.Body>
                             <Card.Text className="text-center">{arrayIndex.description}</Card.Text>
                         </Card.Body>
