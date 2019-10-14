@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { TimelineLite } from "gsap/TweenMax";
 import $ from 'jquery';
 import { Container, Row, Col } from 'react-bootstrap';
 
+import { workHeroAnimation } from '../js/work/workHeroAnimation';
 import { isInViewport } from '../js/isInViewport';
 import SubHeadComponent from '../components/SubHeadComponent';
 import ClientCardContainerComponent from '../components/ClientCardContainerComponent';
@@ -13,14 +13,7 @@ const Work = () => {
     const heroAnimation = (heroIdent) => {
 
         if (isInViewport($(heroIdent))) {
-            const tl = new TimelineLite();
-            tl.to($('#work-hero-text'), 1, {
-                opacity: 1,
-                y: -20
-            })
-                .to($('#scaling-period'), .5, {
-                    opacity: 1
-                });
+            workHeroAnimation();
         }
     }
 
@@ -36,8 +29,6 @@ const Work = () => {
     useEffect(() => {
         allAnimation();
         window.addEventListener('scroll', allAnimation);
-        // console.log('active');
-
     });
 
     return (
