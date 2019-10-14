@@ -50,17 +50,21 @@ html, body {
     .bg-red-orange {
         background: $red-orange;
     }
-    .bg-soft-black{
-        background:$soft-black;
+
+    .bg-soft-black {
+        background: $soft-black;
     }
-    .bg-off-white{
-        background:$off-white;
+
+    .bg-off-white {
+        background: $off-white;
     }
-    .bg-pale-peach{
-        background:$pale-peach;
+
+    .bg-pale-peach {
+        background: $pale-peach;
     }
-    .bg-black{
-        background:$black;
+
+    .bg-black {
+        background: $black;
     }
 
     .primary-color-light {
@@ -92,7 +96,7 @@ html, body {
             color: $black;
         }
 
-         .nav-link {
+        .nav-link {
             &:hover {
                 color: rgba(28, 27, 32, 0.5);
             }
@@ -105,10 +109,11 @@ html, body {
         background: $black;
         transition: background-color 1s ease-out;
 
-        .navbar-toggler{
+        .navbar-toggler {
             border-color: rgba(255, 255, 255, 0.1);
             background: rgba(255, 255, 255, 0.2);
         }
+
         .active .nav-link {
             &:hover {
                 color: $white;
@@ -117,7 +122,7 @@ html, body {
             color: $white;
         }
 
-         .nav-link {
+        .nav-link {
             &:hover {
                 color: rgba(248, 248, 248, 0.8);
             }
@@ -246,6 +251,7 @@ html, body {
                 width: 22%;
                 height: 30%;
                 z-index: 3;
+
                 // max-width: 170px;
 
                 //max-width: 170px;
@@ -476,9 +482,10 @@ html, body {
                 left: 30px;
             }
 
-            #personal-img{
+            #personal-img {
                 border-radius: 5%;
             }
+
             #personal-text-container {
                 font-size: 1.5rem;
 
@@ -552,6 +559,7 @@ html, body {
 
         .client-card-container {
             margin-bottom: 5%;
+
             .client-card {
                 position: relative;
                 height: 150px;
@@ -572,51 +580,61 @@ html, body {
             }
         }
     }
-    .contact{
-        .right-section{
 
-            .right-text-container{
-                top: 50%;
-                color: $white;
-                .all-details{
-                    width: 90%;
-                    margin:0 auto;
-                     .half{
-                            margin-bottom: 5%;
-                        }
-                    .details{
-                        width: 50%;
-                        // .first-half{
-                            
-                        // }
-                        .detail-title{
-                            font-weight: 300;
-                        }
-                        .detail-description{
-                            font-weight: 300;
-                            font-size: 1.3rem;
-                           a{ 
-                               color: $white;
-                            .fa-linkedin-square{
-                                font-size: 25px;
-                            }
-                        }
-                        }
-                    }
-                }
-            }
-        }
-        .left-section{
-            #hero-text{
+    .contact {
+        .left-section {
+            #hero-text {
                 opacity: 1;
-                left:-30px;
+                left: -30px;
             }
-            .left-text-container{
-                top:50%;
+
+            .left-text-container {
+                top: 50%;
                 width: 100%;
                 text-align: center;
                 font-size: 3.5rem;
                 color: $black;
+            }
+        }
+
+        .right-section {
+            .right-text-container {
+                top: 50%;
+                color: $white;
+
+                .all-details {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    .half {
+                        margin-bottom: 5%;
+                    }
+
+                    .details {
+                        width: 50%;
+
+                        // .first-half{
+
+                        // }
+                        .detail-title {
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+
+                        .detail-description {
+                            font-weight: 300;
+                            font-size: 1.3rem;
+
+                            a {
+                                color: $white;
+
+                                .fa-linkedin-square {
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -739,6 +757,28 @@ html, body {
             .hero-section {
                 .hero-text {
                     font-size: 6rem;
+                }
+            }
+        }
+
+        .contact {
+            .left-section {
+                .left-text-container {
+                    font-size: 3rem;
+                }
+            }
+            .right-section {
+                .right-text-container {                    
+                   .all-details {
+    
+                        .details {
+                            width: 50%;
+    
+                            .detail-description {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -953,6 +993,29 @@ html, body {
                 }
             }
         }
+        .contact {
+            .left-section {
+                .left-text-container {
+                    font-size: 2.3rem;
+                }
+            }
+            .right-section {
+                .right-text-container {                    
+                   .all-details {
+    
+                        .details {
+
+                            .detail-title {
+                                font-size: 1.4rem;
+                            }
+                            .detail-description {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1080,6 +1143,24 @@ html, body {
 
                     #scaling-period {
                         right: 3%;
+                    }
+                }
+            }
+        }
+        .contact {
+            .right-section {
+                .right-text-container {                    
+                   .all-details {
+    
+                        .details {
+
+                            .detail-title {
+                                font-size: .9rem;
+                            }
+                            .detail-description {
+                                font-size: .8rem;
+                            }
+                        }
                     }
                 }
             }
