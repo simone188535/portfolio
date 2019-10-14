@@ -573,8 +573,9 @@ html, body {
         }
     }
     .contact{
-        .left-section{
-            .left-text-container{
+        .right-section{
+
+            .right-text-container{
                 top: 50%;
                 color: $white;
                 .all-details{
@@ -605,8 +606,12 @@ html, body {
                 }
             }
         }
-        .right-section{
-            .right-text-container{
+        .left-section{
+            #hero-text{
+                opacity: 1;
+                left:-30px;
+            }
+            .left-text-container{
                 top:50%;
                 width: 100%;
                 text-align: center;

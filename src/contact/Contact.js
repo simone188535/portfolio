@@ -1,67 +1,75 @@
 import React, { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import $ from 'jquery';
+import { isInViewport } from '../js/isInViewport';
+import { TweenMax } from "gsap/TweenMax";
+import { Container, Row, Col } from 'react-bootstrap';
+
+
 
 
 
 const Contact = () => {
 
+    const contactHeroAnimation = (heroIdent) => {
+        if(isInViewport($(heroIdent))){
+            TweenMax.to($('#hero-text'), 1, { x: 30, opacity: 1 });
+        }
+    }
     const allAnimation = () => {
-        // aboutHeroAnimation('#left-hero-content', '#right-hero-content');
-        // aboutMeSectionAnimation('#about-me-trigger');
-        // console.log('test');
+        contactHeroAnimation('#left-hero-container');
+
     }
     useEffect(() => {
         allAnimation();
         window.addEventListener('scroll', allAnimation);
-        // console.log('active');
 
     });
 
     return (
         <div className="contact">
-            <div className="container-fluid ">
-                <div className="row" >
-                    <div className="col-md-6 vh-100 bg-pale-peach right-section">
-                        <div className="position-relative right-text-container">Contact Me Anytime.</div>
-                    </div>
-                    <div className="col-md-6 vh-100 bg-soft-black left-section">
-                        <div className="position-relative left-text-container">
-                            <div className="all-details row">
-                                <div className="half col-12">
-                                    <div className="float-left details col-6">
+            <Container fluid={true}>
+                <Row>
+                    <Col md={6} id="left-hero-container" className="vh-100 bg-pale-peach left-section">
+                        <div id="hero-text" className="position-relative left-text-container">Contact Me Anytime.</div>
+                    </Col>
+                    <Col md={6} className="vh-100 bg-soft-black right-section">
+                        <div className="position-relative right-text-container">
+                            <Row className="all-details">
+                                <Col xs={12} className="half">
+                                    <Col xs={6} className="float-left details">
                                         <div className="detail-title">Phone</div>
                                         <div className="detail-description">
                                             (404)-397-9523
                                         </div>
-                                    </div>
-                                    <div className="float-left details col-6">
+                                    </Col>
+                                    <Col xs={6} className="float-left details">
                                         <div className="detail-title">Email</div>
                                         <div className="detail-description">
                                             simone.anthony1@yahoo.com
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="half col-12">
-                                    <div className="float-left details col-6">
+                                    </Col>
+                                </Col>
+                                <Col className="half">
+                                    <Col xs={12} className="float-left details">
                                         <div className="detail-title">City</div>
                                         <div className="detail-description">
                                             Stone Mountain, Georgia
                                         </div>
-                                    </div>
-                                    <div className="float-left details col-6">
+                                    </Col>
+                                    <Col xs={6} className="float-left details">
                                         <div className="detail-title">Follow</div>
                                         <div className="detail-description">
                                             <a href="https://www.linkedin.com/in/simone-anthony-059066136/" target="_blank" rel="noopener noreferrer">
                                                 <i className="fa fa-linkedin-square"></i>
                                             </a>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    </Col>
+                                </Col>
+                            </Row>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

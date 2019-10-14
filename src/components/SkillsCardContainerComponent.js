@@ -4,6 +4,7 @@ import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import { TweenMax } from "gsap/TweenMax";
 import { Container, Row, Col, Card } from 'react-bootstrap';
+
 import skillsArray from '../js/props-objects/skills-props';
 
 

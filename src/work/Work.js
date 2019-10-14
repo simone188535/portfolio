@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
-import {TimelineLite } from "gsap/TweenMax";
+import { TimelineLite } from "gsap/TweenMax";
 import $ from 'jquery';
+import { Container, Row, Col } from 'react-bootstrap';
+
 import { isInViewport } from '../js/isInViewport';
 import SubHeadComponent from '../components/SubHeadComponent';
 import ClientCardContainerComponent from '../components/ClientCardContainerComponent';
@@ -8,24 +10,24 @@ import ClientCardContainerComponent from '../components/ClientCardContainerCompo
 
 const Work = () => {
 
-    const heroAnimation = (heroIdent) =>{
-       
+    const heroAnimation = (heroIdent) => {
+
         if (isInViewport($(heroIdent))) {
             const tl = new TimelineLite();
-            tl.to($('#work-hero-text'), 1, { 
+            tl.to($('#work-hero-text'), 1, {
                 opacity: 1,
-                y:-20 
+                y: -20
             })
-            .to($('#scaling-period'),.5,{
-                opacity:1
-            });
+                .to($('#scaling-period'), .5, {
+                    opacity: 1
+                });
         }
     }
 
     const allAnimation = () => {
         heroAnimation('#hero-content');
     }
-   
+
     const workTrigger = {
         ident: 'workTrigger',
         text: 'Previous Clients'
@@ -40,35 +42,29 @@ const Work = () => {
 
     return (
         <div className="work">
-            <div className="container-fluid ">
-                <div className="row">
-                    <div className="col-12 bg-red-orange">
+            <Container fluid={true}>
+                <Row>
+                    <Col className="bg-red-orange">
                         <div className="hero-section w-100">
                             <div className="h-100" id="hero-content">
                                 <div className="hero-text position-relative h-100">
                                     <div className="hero-text-container position-relative">
-                                    <div  id="work-hero-text">Work <span id="scaling-period" className="position-relative">.</span></div>
-                                     {/* <div id="work-hero-text" className="float-left">Work</div> */}
-                                   {/* <div id="scaling-period" className="float-left"></div> */}
+                                        <div id="work-hero-text">Work <span id="scaling-period" className="position-relative">.</span></div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-            <div className="container-fluid">
+                    </Col>
+                </Row>
+            </Container>
+            <Container fluid={true}>
                 <SubHeadComponent {...workTrigger} />
-                
-                <div className="row">
-                    <div className="container">
-                    <ClientCardContainerComponent ident="work-card-container" />
-                    </div>
-                </div>
-            </div>
+                <Row>
+                    <Container>
+                        <ClientCardContainerComponent ident="work-card-container" />
+                    </Container>
+                </Row>
+            </Container>
         </div>
     );
 }

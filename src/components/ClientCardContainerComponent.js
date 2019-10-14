@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 import clientsArray from '../js/props-objects/client-props';
 
@@ -11,14 +12,13 @@ const CardContainerComponent = (props) => {
             return (
 
 
-                <div key={arrayIndex.id} className="col-6 col-md-3">
+                <Col xs={6} md={3} key={arrayIndex.id}>
                     <a href={arrayIndex.link} target="_blank" rel="noopener noreferrer">
                         <div className="client-card">
-                            <img className=" img-fluid" src={arrayIndex.img} alt={arrayIndex.alt} />
+                            <Image fluid={true} src={arrayIndex.img} alt={arrayIndex.alt} />
                         </div>
-
                     </a>
-                </div>
+                </Col>
 
             )
         }
@@ -29,11 +29,11 @@ const CardContainerComponent = (props) => {
 
     return (
         <div id={props.ident} className="all-cards">
-            <div className="container client-card-container">
-                <div className="row ">
+            <Container className="client-card-container">
+                <Row>
                     {makeCard(clientsArray.clients)}
-                </div>
-            </div>
+                </Row>
+            </Container>
 
         </div>);
 }
