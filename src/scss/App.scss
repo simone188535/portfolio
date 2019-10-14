@@ -154,10 +154,10 @@ html, body {
 
     .all-cards {
         // display: flex;
-        // img{
-        //     width: 255px;
-        //     height: 255px;
-        // }
+        img{
+            max-width: 100%;
+            flex-shrink: 0;
+        }
         .card {
             opacity: 0;
 
