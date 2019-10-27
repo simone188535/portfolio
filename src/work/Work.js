@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { workHeroAnimation } from '../js/work/workHeroAnimation';
 import { isInViewport } from '../js/isInViewport';
 import SubHeadComponent from '../components/SubHeadComponent';
+import ProjectCardComponent from '../components/ProjectCardComponent'; 
 import ClientCardContainerComponent from '../components/ClientCardContainerComponent';
 
 
@@ -21,6 +22,11 @@ const Work = () => {
         heroAnimation('#hero-content');
     }
 
+    const projectTrigger = {
+        ident: 'projectTrigger',
+        text: 'Projects'
+
+    };
     const workTrigger = {
         ident: 'workTrigger',
         text: 'Previous Clients'
@@ -49,6 +55,12 @@ const Work = () => {
                 </Row>
             </Container>
             <Container fluid={true}>
+                <SubHeadComponent {...projectTrigger} />
+                <Row>
+                    <Container>
+                    <ProjectCardComponent/>
+                    </Container>
+                </Row>
                 <SubHeadComponent {...workTrigger} />
                 <Row>
                     <Container>
