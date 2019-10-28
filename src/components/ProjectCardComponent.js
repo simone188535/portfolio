@@ -1,20 +1,34 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Row,Col, Card, Button } from 'react-bootstrap';
+import ProjectArray from '../js/props-objects/project-props';
+import _ from 'lodash';
 
 const ProjectCardComponent = () => {
 
+    const makeCard = (arrayValue) => {
+        const results = _.map(arrayValue, arrayIndex => {
+            return (
+                <Col md={4} key={arrayIndex.id}>
+                    <Card>
+                        <Card.Img variant="top" src={arrayIndex.img} />
+                        <Card.Body>
+                            <Card.Title>{arrayIndex.title}</Card.Title>
+                            <Card.Text>
+                                {arrayIndex.description}
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            );
+        });
+        return results;
+    }
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>);
+        <Row>
+       {makeCard(ProjectArray)}
+        </Row>
+    );
 }
 
 export default ProjectCardComponent;

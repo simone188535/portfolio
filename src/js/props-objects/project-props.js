@@ -1,7 +1,7 @@
 const projects = [
     {
         id:1,
-        img:'/images/logos/DGWesternUnion.png',
+        img:'/images/projects/DGWesternUnion.png',
         alt:'Dollar General Western Union',
         title:'Dollar General Western Union',
         description:'This is a landing built with HTML, CSS, JQuery and Bootstrap3',
@@ -10,7 +10,7 @@ const projects = [
     },
     {
         id:2,
-        img:'/images/logos/searshometownstores2.png',
+        img:'/images/projects/searshometownstores2.png',
         alt:'Sears Landing PHP Template',
         title:'Sears Landing PHP Template',
         description:' This is a PHP template built for creating landing pages quickly',
@@ -19,7 +19,7 @@ const projects = [
     },
     {
         id:3,
-        img:'/images/logos/caymus-equity.png',
+        img:'/images/projects/caymus-equity.png',
         alt:'Caymus Equity',
         title:'Caymus Equity',
         description:'This is a Wordpress site I&39;ve helped maintain.',
@@ -28,7 +28,7 @@ const projects = [
     },
     {
         id:4,
-        img:'/images/logos/KFEmail.png',
+        img:'/images/projects/KFEmail.png',
         alt:'Email Template',
         title:'Email Template',
         description:'Responsive Email Template built in Ruby that I helped modify modifiy maintain',
@@ -37,7 +37,7 @@ const projects = [
     },
     {
         id:5,
-        img:'/images/logos/DGApp.png',
+        img:'/images/projects/DGApp.png',
         alt:'Dollar General App Page',
         title:'Dollar General App Page',
         description:'This is another Dollar General Landing Page',
@@ -46,7 +46,7 @@ const projects = [
     },
     {
         id:6,
-        img:'/images/logos/react.png',
+        img:'/images/projects/react.png',
         alt:'Simple React todo List',
         title:'Simple React todo List',
         description:'This is an application that uses React and Redux',
@@ -55,3 +55,5 @@ const projects = [
     },
 
 ]
+
+export default projects;
