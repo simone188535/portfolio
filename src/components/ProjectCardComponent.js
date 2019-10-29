@@ -5,37 +5,14 @@ import { Row, Col, Card, Button } from 'react-bootstrap';
 
 const ProjectCardComponent = () => {
 
-    // const makeCard = (arrayValue) => {
-    //     const results = _.map(arrayValue, arrayIndex => {
-
-
-    //         let cardValue =
-    //             <Col md={4} key={arrayIndex.id}>
-    //                 <Card>
-    //                     <Card.Img variant="top" className="img-fluid" src={arrayIndex.img} />
-    //                     <Card.Body>
-    //                         <Card.Title>{arrayIndex.title}</Card.Title>
-    //                         <Card.Text>
-    //                             {arrayIndex.description}
-    //                         </Card.Text>
-    //                         <Button className="viewButton">View Here</Button>
-    //                         <Button variant="secondary">View on GitHub</Button>
-    //                     </Card.Body>
-    //                 </Card>
-    //             </Col>
-
-
-    //         return (cardValue);
-    //     });
-    //     return results;
-    // }
     return (
         <div>
             <Row>
-                {/* {makeCard(ProjectArray)} */}
                 <Col md={4}>
                     <Card>
+                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/DGWesternUnion.png" alt="Dollar General Western Union" />
+                        </div>
                         <Card.Body>
                             <Card.Title>Dollar General Western Union</Card.Title>
                             <Card.Text>
@@ -54,7 +31,9 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
+                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/searshometownstores2.png" alt="Sears Landing PHP Template" />
+                        </div>
                         <Card.Body>
                             <Card.Title>Sears Landing PHP Template</Card.Title>
                             <Card.Text>
@@ -71,7 +50,9 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
+                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/caymus-equity.png" alt="Caymus Equity" />
+                        </div>
                         <Card.Body>
                             <Card.Title>Caymus Equity</Card.Title>
                             <Card.Text>
@@ -90,7 +71,9 @@ const ProjectCardComponent = () => {
             <Row className="my-5">
             <Col md={4}>
                     <Card>
+                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/KFEmail.png" alt="Email Template" />
+                        </div>
                         <Card.Body>
                             <Card.Title>Email Template</Card.Title>
                             <Card.Text>
@@ -107,7 +90,9 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
+                            <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/DGApp.png" alt="Dollar General App Page" />
+                        </div>
                         <Card.Body>
                             <Card.Title>Dollar General App Page</Card.Title>
                             <Card.Text>
@@ -124,7 +109,9 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
+                            <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/todo.png" alt="Simple React Todo List" />
+                        </div>
                         <Card.Body>
                             <Card.Title>Simple React Todo List</Card.Title>
                             <Card.Text>
