@@ -38,7 +38,7 @@ const ProjectCardComponent = () => {
                             <Card.Text>
                                 This is a PHP template built for creating landing pages quickly.
                             </Card.Text>
-                            <a href="http://sb6.hometown.kili.netsuitestaging.com/how-to-clean-your-oven" target="_blank" rel="noopener noreferrer"  className="mr-3">
+                            <a href="http://www.searshometownstores.com/buying-guide-riding-mower" target="_blank" rel="noopener noreferrer"  className="mr-3">
                                 <Button className="viewButton">View Here</Button>
                             </a>
                             <a href="https://github.com/simone188535/sears_repo" target="_blank" rel="noopener noreferrer">
