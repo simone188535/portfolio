@@ -44,7 +44,7 @@ html, body {
 }
 
 .full-page {
-    max-width: 1440px;
+    // max-width: 1440px;
     margin: 0 auto;
 
     .bg-red-orange {
@@ -154,10 +154,11 @@ html, body {
 
     .all-cards {
         // display: flex;
-        img{
+        img {
             max-width: 100%;
             flex-shrink: 0;
         }
+
         .card {
             opacity: 0;
 
@@ -201,10 +202,6 @@ html, body {
                 opacity: 0;
                 width: 85%;
             }
-
-            // background: url("../pablo-gentile-3MYvgsH1uK0-unsplash.jpg") center;
-            // background-size: cover;
-       
         }
 
         .bg-white {
@@ -236,46 +233,48 @@ html, body {
                 max-height: 400px;
             }
 
-            #light-header-box {
-                // background: $green;
-                background: $vivid-orange;
+            .animation-container {
+                #light-header-box {
+                    // background: $green;
+                    background: $vivid-orange;
 
-                // background: $gold;
-                // background: $pale-peach;
-                // background: $green-opac;
-                top: 30%;
-                left: 20%;
-                z-index: 1;
-                border-radius: 10%;
-            }
+                    // background: $gold;
+                    // background: $pale-peach;
+                    // background: $green-opac;
+                    top: 30%;
+                    left: 20%;
+                    z-index: 1;
+                    border-radius: 10%;
+                }
 
-            #mid-header-box {
-                top: 40%;
-                left: 38%;
-                width: 22%;
-                height: 30%;
-                z-index: 3;
+                #mid-header-box {
+                    top: 40%;
+                    left: 38%;
+                    width: 22%;
+                    height: 30%;
+                    z-index: 3;
 
-                // max-width: 170px;
+                    // max-width: 170px;
 
-                //max-width: 170px;
+                    //max-width: 170px;
 
-                // background: $vivid-orange;
-                // background: $green-opac;
-                // background: $black;
-                // background: $gold;
-                background: $pale-peach;
-                border-radius: 14% 0px 14% 0px;
-            }
+                    // background: $vivid-orange;
+                    // background: $green-opac;
+                    // background: $black;
+                    // background: $gold;
+                    background: $pale-peach;
+                    border-radius: 14% 0px 14% 0px;
+                }
 
-            #dark-header-box {
-                background: $red-orange-opac;
+                #dark-header-box {
+                    background: $red-orange-opac;
 
-                // background: $red-orange;
-                top: 40%;
-                left: 38%;
-                z-index: 2;
-                border-radius: 10%;
+                    // background: $red-orange;
+                    top: 40%;
+                    left: 38%;
+                    z-index: 2;
+                    border-radius: 10%;
+                }
             }
         }
 
@@ -560,10 +559,12 @@ html, body {
                 }
             }
         }
-        .project-section{
-            .card{
+
+        .project-section {
+            .card {
                 height: 350px;
-                .viewButton{
+
+                .viewButton {
                     background: $red-orange;
                     border: none;
                 }
@@ -663,17 +664,19 @@ html, body {
                     width: 50%;
                 }
 
-                #light-header-box {
-                    left: 16%;
-                }
+                .animation-container {
+                    #light-header-box {
+                        left: 16%;
+                    }
 
-                #mid-header-box {
-                    left: 34%;
-                    width: 32%;
-                }
+                    #mid-header-box {
+                        left: 34%;
+                        width: 32%;
+                    }
 
-                #dark-header-box {
-                    left: 34%;
+                    #dark-header-box {
+                        left: 34%;
+                    }
                 }
             }
         }
@@ -724,21 +727,23 @@ html, body {
                     height: 35%;
                 }
 
-                #light-header-box {
-                    left: 17%;
-                }
+                .animation-container {
+                    #light-header-box {
+                        left: 17%;
+                    }
 
-                #mid-header-box {
-                    left: 34%;
-                    width: 33%;
-                    height: 25%;
+                    #mid-header-box {
+                        left: 34%;
+                        width: 33%;
+                        height: 25%;
 
-                    // border-radius: 14% 0px 14% 0px;
-               
-                }
+                        // border-radius: 14% 0px 14% 0px;
+                   
+                    }
 
-                #dark-header-box {
-                    left: 34%;
+                    #dark-header-box {
+                        left: 34%;
+                    }
                 }
             }
 
@@ -777,17 +782,46 @@ html, body {
                     font-size: 3rem;
                 }
             }
+
             .right-section {
-                .right-text-container {                    
-                   .all-details {
-    
+                .right-text-container {
+                    .all-details {
                         .details {
                             width: 50%;
-    
+
                             .detail-description {
                                 font-size: 1rem;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    // Xlarge Devices
+    .full-page {
+        .home {
+            .jumbo-center{
+                position: relative;
+                width: 700px;
+                margin: 0 auto;
+                height: 100%;
+            }
+            .animation-container {
+                position: relative;
+                width: 700px;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            .section-third {
+                #left-text-container {
+                    .section-three-small-col{
+                        width: 300px;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -822,19 +856,21 @@ html, body {
                
                 }
 
-                #light-header-box {
-                    left: 14%;
-                }
+                .animation-container {
+                    #light-header-box {
+                        left: 14%;
+                    }
 
-                #mid-header-box {
-                    width: 37%;
+                    #mid-header-box {
+                        width: 37%;
 
-                    // height: 20%;
-                    left: 32%;
-                }
+                        // height: 20%;
+                        left: 32%;
+                    }
 
-                #dark-header-box {
-                    left: 32%;
+                    #dark-header-box {
+                        left: 32%;
+                    }
                 }
             }
 
@@ -905,19 +941,21 @@ html, body {
                
                 }
 
-                #light-header-box {
-                    left: 20%;
-                }
+                .animation-container {
+                    #light-header-box {
+                        left: 20%;
+                    }
 
-                #mid-header-box {
-                    width: 22%;
+                    #mid-header-box {
+                        width: 22%;
 
-                    // height: 30%;
-                    left: 38%;
-                }
+                        // height: 30%;
+                        left: 38%;
+                    }
 
-                #dark-header-box {
-                    left: 38%;
+                    #dark-header-box {
+                        left: 38%;
+                    }
                 }
             }
 
@@ -1003,21 +1041,22 @@ html, body {
                 }
             }
         }
+
         .contact {
             .left-section {
                 .left-text-container {
                     font-size: 2.3rem;
                 }
             }
-            .right-section {
-                .right-text-container {                    
-                   .all-details {
-    
-                        .details {
 
+            .right-section {
+                .right-text-container {
+                    .all-details {
+                        .details {
                             .detail-title {
                                 font-size: 1.4rem;
                             }
+
                             .detail-description {
                                 font-size: 1.3rem;
                             }
@@ -1063,19 +1102,21 @@ html, body {
                
                 }
 
-                #light-header-box {
-                    left: 20%;
-                }
+                .animation-container {
+                    #light-header-box {
+                        left: 20%;
+                    }
 
-                #mid-header-box {
-                    width: 22%;
+                    #mid-header-box {
+                        width: 22%;
 
-                    // height: 30%;
-                    left: 38%;
-                }
+                        // height: 30%;
+                        left: 38%;
+                    }
 
-                #dark-header-box {
-                    left: 38%;
+                    #dark-header-box {
+                        left: 38%;
+                    }
                 }
             }
 
@@ -1156,18 +1197,17 @@ html, body {
                     }
                 }
             }
-
         }
+
         .contact {
             .right-section {
-                .right-text-container {                    
-                   .all-details {
-    
+                .right-text-container {
+                    .all-details {
                         .details {
-
                             .detail-title {
                                 font-size: .9rem;
                             }
+
                             .detail-description {
                                 font-size: .8rem;
                             }

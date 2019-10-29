@@ -26,7 +26,7 @@ const Homepage = () => {
 
     };
 
- 
+
     const finalSection = (ident1) => {
         const tl = new TimelineLite();
 
@@ -63,17 +63,21 @@ const Homepage = () => {
             <Container fluid={true}>
                 <Row className="jumbo-head section-one" >
                     <Col id="hero-left" md={6} className="vh-100 bg-red-orange position-relative">
-                        <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
-                            <div className="header-thin primary-dark-color headline-thin">Hello. My name is ...</div>
-                            <h1 className="header-medium white headline-med">Simone Anthony</h1>
-                            <div className="header-medium primary-dark-color headline-med">Full Stack Web Developer.</div>
+                        <div className="jumbo-center">
+                            <div id="jumbo-head-container" className="text-align-left position-absolute header-text-container" >
+                                <div className="header-thin primary-dark-color headline-thin">Hello. My name is ...</div>
+                                <h1 className="header-medium white headline-med">Simone Anthony</h1>
+                                <div className="header-medium primary-dark-color headline-med">Full Stack Web Developer.</div>
+                            </div>
                         </div>
                     </Col>
                     <Col id="hero-right" md={6} className="vh-100 secondary-background position-relative hero-right-container">
                         <div id="circle-to-bg" className="position-absolute" ></div>
-                        <div id="light-header-box" className="header-box position-absolute all-boxes"></div>
-                        <div id="mid-header-box" className="position-absolute all-boxes"></div>
-                        <div id="dark-header-box" className="header-box position-absolute all-boxes"></div>
+                        <div className="animation-container">
+                            <div id="light-header-box" className="header-box position-absolute all-boxes"></div>
+                            <div id="mid-header-box" className="position-absolute all-boxes"></div>
+                            <div id="dark-header-box" className="header-box position-absolute all-boxes"></div>
+                        </div>
 
                     </Col>
 
