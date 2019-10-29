@@ -804,12 +804,13 @@ html, body {
     // Xlarge Devices
     .full-page {
         .home {
-            .jumbo-center{
+            .jumbo-center {
                 position: relative;
                 width: 700px;
                 margin: 0 auto;
                 height: 100%;
             }
+
             .animation-container {
                 position: relative;
                 width: 700px;
@@ -819,10 +820,28 @@ html, body {
 
             .section-third {
                 #left-text-container {
-                    .section-three-small-col{
+                    .section-three-small-col {
                         width: 300px;
                         margin: 0 auto;
                     }
+                }
+            }
+        }
+
+        .about {
+            #hero-text-left {
+                max-width: 250px;
+            }
+
+            #hero-text-right {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .aspiration-section {
+                ul.aspiration-list{
+                    width: 830px;
+                    padding: 0% 0% 5%;
                 }
             }
         }
