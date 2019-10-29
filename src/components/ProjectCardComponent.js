@@ -12,7 +12,7 @@ const ProjectCardComponent = () => {
     //         let cardValue =
     //             <Col md={4} key={arrayIndex.id}>
     //                 <Card>
-    //                     <Card.Img variant="top" src={arrayIndex.img} />
+    //                     <Card.Img variant="top" className="img-fluid" src={arrayIndex.img} />
     //                     <Card.Body>
     //                         <Card.Title>{arrayIndex.title}</Card.Title>
     //                         <Card.Text>
@@ -35,7 +35,7 @@ const ProjectCardComponent = () => {
                 {/* {makeCard(ProjectArray)} */}
                 <Col md={4}>
                     <Card>
-                        <Card.Img variant="top" src="/images/projects/DGWesternUnion.png" alt="Dollar General Western Union" />
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/DGWesternUnion.png" alt="Dollar General Western Union" />
                         <Card.Body>
                             <Card.Title>Dollar General Western Union</Card.Title>
                             <Card.Text>
@@ -54,7 +54,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                        <Card.Img variant="top" src="/images/projects/searshometownstores2.png" alt="Sears Landing PHP Template" />
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/searshometownstores2.png" alt="Sears Landing PHP Template" />
                         <Card.Body>
                             <Card.Title>Sears Landing PHP Template</Card.Title>
                             <Card.Text>
@@ -71,7 +71,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                        <Card.Img variant="top" src="/images/projects/caymus-equity.png" alt="Caymus Equity" />
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/caymus-equity.png" alt="Caymus Equity" />
                         <Card.Body>
                             <Card.Title>Caymus Equity</Card.Title>
                             <Card.Text>
@@ -90,7 +90,7 @@ const ProjectCardComponent = () => {
             <Row className="my-5">
             <Col md={4}>
                     <Card>
-                        <Card.Img variant="top" src="/images/projects/KFEmail.png" alt="Email Template" />
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/KFEmail.png" alt="Email Template" />
                         <Card.Body>
                             <Card.Title>Email Template</Card.Title>
                             <Card.Text>
@@ -107,7 +107,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                        <Card.Img variant="top" src="/images/projects/DGApp.png" alt="Dollar General App Page" />
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/DGApp.png" alt="Dollar General App Page" />
                         <Card.Body>
                             <Card.Title>Dollar General App Page</Card.Title>
                             <Card.Text>
@@ -124,7 +124,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                        <Card.Img variant="top" src="/images/projects/todo.png" alt="Simple React Todo List" />
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/todo.png" alt="Simple React Todo List" />
                         <Card.Body>
                             <Card.Title>Simple React Todo List</Card.Title>
                             <Card.Text>
