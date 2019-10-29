@@ -13,6 +13,7 @@ const ProjectCardComponent = () => {
                         <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/DGWesternUnion.png" alt="Dollar General Western Union" />
                         </div>
+                        <div>
                         <Card.Body>
                             <Card.Title>Dollar General Western Union</Card.Title>
                             <Card.Text>
@@ -27,6 +28,7 @@ const ProjectCardComponent = () => {
                             </a>
                             
                         </Card.Body>
+                        </div>
                     </Card>
                 </Col>
                 <Col md={4}>
@@ -34,6 +36,7 @@ const ProjectCardComponent = () => {
                         <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/searshometownstores2.png" alt="Sears Landing PHP Template" />
                         </div>
+                        <div>
                         <Card.Body>
                             <Card.Title>Sears Landing PHP Template</Card.Title>
                             <Card.Text>
@@ -46,6 +49,7 @@ const ProjectCardComponent = () => {
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
+                        </div>
                     </Card>
                 </Col>
                 <Col md={4}>
@@ -53,6 +57,7 @@ const ProjectCardComponent = () => {
                         <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/caymus-equity.png" alt="Caymus Equity" />
                         </div>
+                        <div>
                         <Card.Body>
                             <Card.Title>Caymus Equity</Card.Title>
                             <Card.Text>
@@ -65,6 +70,7 @@ const ProjectCardComponent = () => {
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
+                        </div>
                     </Card>
                 </Col>
             </Row>
@@ -74,6 +80,7 @@ const ProjectCardComponent = () => {
                         <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/KFEmail.png" alt="Email Template" />
                         </div>
+                        <div>
                         <Card.Body>
                             <Card.Title>Email Template</Card.Title>
                             <Card.Text>
@@ -86,6 +93,7 @@ const ProjectCardComponent = () => {
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
+                        </div>
                     </Card>
                 </Col>
                 <Col md={4}>
@@ -93,6 +101,7 @@ const ProjectCardComponent = () => {
                             <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/DGApp.png" alt="Dollar General App Page" />
                         </div>
+                        <div>
                         <Card.Body>
                             <Card.Title>Dollar General App Page</Card.Title>
                             <Card.Text>
@@ -105,6 +114,7 @@ const ProjectCardComponent = () => {
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
+                        </div>
                     </Card>
                 </Col>
                 <Col md={4}>
@@ -112,6 +122,7 @@ const ProjectCardComponent = () => {
                             <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/todo.png" alt="Simple React Todo List" />
                         </div>
+                        <div>
                         <Card.Body>
                             <Card.Title>Simple React Todo List</Card.Title>
                             <Card.Text>
@@ -122,6 +133,7 @@ const ProjectCardComponent = () => {
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
+                        </div>
                     </Card>
                 </Col>
             </Row>
