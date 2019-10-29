@@ -553,7 +553,8 @@ html, body {
                 
                     height: auto;
                     img{
-                        height:auto;
+                        max-width: 100%;
+                        flex-shrink: 0;
                     }
                 }
                 .viewButton {
