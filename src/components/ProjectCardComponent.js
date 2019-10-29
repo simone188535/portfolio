@@ -7,7 +7,7 @@ const ProjectCardComponent = () => {
 
     return (
         <div>
-            <Row>
+            <Row className="my-5">
                 <Col md={4}>
                     <Card>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/DGWesternUnion.png" alt="Dollar General Western Union" />
@@ -68,7 +68,7 @@ const ProjectCardComponent = () => {
                     </Card>
                 </Col>
             </Row>
-            <Row className="my-5">
+            <Row>
             <Col md={4}>
                     <Card>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/KFEmail.png" alt="Email Template" />
@@ -114,7 +114,7 @@ const ProjectCardComponent = () => {
                         <Card.Body>
                             <Card.Title>Simple React Todo List</Card.Title>
                             <Card.Text>
-                            This is an application that uses React and Redux.
+                            This is an application that demonstrates my ability to uses React and Redux.
                             </Card.Text>
                             
                             <a href="https://github.com/simone188535/react-todo-list" target="_blank" rel="noopener noreferrer">

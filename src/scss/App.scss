@@ -549,14 +549,12 @@ html, body {
         .project-section {
             .card {
                 height: 350px;
-                // .img-container{
                 
-                    // height: auto;
                     img{
                         max-width: 100%;
                         flex-shrink: 0;
                     }
-                // }
+                    
                 .viewButton {
                     background: $red-orange;
                     border: none;
