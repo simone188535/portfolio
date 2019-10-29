@@ -10,9 +10,7 @@ const ProjectCardComponent = () => {
             <Row>
                 <Col md={4}>
                     <Card>
-                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/DGWesternUnion.png" alt="Dollar General Western Union" />
-                        </div>
                         <div>
                         <Card.Body>
                             <Card.Title>Dollar General Western Union</Card.Title>
@@ -33,9 +31,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/searshometownstores2.png" alt="Sears Landing PHP Template" />
-                        </div>
                         <div>
                         <Card.Body>
                             <Card.Title>Sears Landing PHP Template</Card.Title>
@@ -54,9 +50,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/caymus-equity.png" alt="Caymus Equity" />
-                        </div>
                         <div>
                         <Card.Body>
                             <Card.Title>Caymus Equity</Card.Title>
@@ -77,9 +71,7 @@ const ProjectCardComponent = () => {
             <Row className="my-5">
             <Col md={4}>
                     <Card>
-                        <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/KFEmail.png" alt="Email Template" />
-                        </div>
                         <div>
                         <Card.Body>
                             <Card.Title>Email Template</Card.Title>
@@ -98,9 +90,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                            <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/DGApp.png" alt="Dollar General App Page" />
-                        </div>
                         <div>
                         <Card.Body>
                             <Card.Title>Dollar General App Page</Card.Title>
@@ -119,9 +109,7 @@ const ProjectCardComponent = () => {
                 </Col>
                 <Col md={4}>
                     <Card>
-                            <div>
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/todo.png" alt="Simple React Todo List" />
-                        </div>
                         <div>
                         <Card.Body>
                             <Card.Title>Simple React Todo List</Card.Title>
