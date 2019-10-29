@@ -38,9 +38,6 @@ const Homepage = () => {
     const allAnimation = () => {
         heroAnimation('#hero-left', '#hero-right');
 
-        // staggerCards('#first-card-container');
-        // subSectionHeadAnimation('#trigger1');
-
         finalSection('#left-text-container', '#right-text-container');
 
         return false;
@@ -51,6 +48,7 @@ const Homepage = () => {
         text: 'Skills'
 
     };
+
 
     useEffect(() => {
         allAnimation();
