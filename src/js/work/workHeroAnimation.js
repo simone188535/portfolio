@@ -6,9 +6,9 @@ const workHeroAnimation = () => {
             tl.to($('#work-hero-text'), 1, {
                 opacity: 1,
                 y: -20
-            })
-                .to($('#scaling-period'), .5, {
-                    opacity: 1
-                });
+            });
+                // .to($('#scaling-period'), .5, {
+                //     opacity: 1
+                // });
 }
 export { workHeroAnimation };

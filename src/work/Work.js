@@ -46,7 +46,9 @@ const Work = () => {
                             <div className="h-100" id="hero-content">
                                 <div className="hero-text position-relative h-100">
                                     <div className="hero-text-container position-relative">
-                                        <div id="work-hero-text">Work <span id="scaling-period" className="position-relative">.</span></div>
+                                        <div id="work-hero-text">Work 
+                                        {/* <span id="scaling-period" className="position-relative">.</span> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
