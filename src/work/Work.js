@@ -57,7 +57,7 @@ const Work = () => {
             <Container fluid={true}>
                 <SubHeadComponent {...projectTrigger} />
                 <Row>
-                    <Container>
+                    <Container className="project-section">
                     <ProjectCardComponent/>
                     </Container>
                 </Row>
