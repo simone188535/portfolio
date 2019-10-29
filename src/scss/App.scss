@@ -563,7 +563,9 @@ html, body {
         .project-section {
             .card {
                 height: 350px;
-
+                img{
+                    height:auto;
+                }
                 .viewButton {
                     background: $red-orange;
                     border: none;
