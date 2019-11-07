@@ -122,7 +122,9 @@ const ProjectCardComponent = () => {
                             <Card.Text>
                             This is a pokedex built using React and Redux. It pulls data using axios, and displays it.
                             </Card.Text>
-                            
+                            <a href="https://pokedex.simoneanthony.com/" target="_blank" rel="noopener noreferrer"  className="mr-3">
+                                <Button className="viewButton">View Here</Button>
+                            </a>
                             <a href="https://github.com/simone188535/pokedex" target="_blank" rel="noopener noreferrer">
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
