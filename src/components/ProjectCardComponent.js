@@ -101,12 +101,29 @@ const ProjectCardComponent = () => {
                     <Card className="mb-5 mb-md-0">
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/todo.png" alt="Simple React Todo List" />
                         <Card.Body>
-                            <Card.Title>Simple React Todo List</Card.Title>
+                            <Card.Title>React Todo List</Card.Title>
                             <Card.Text>
                             This is an application that demonstrates my ability to uses React and Redux.
                             </Card.Text>
                             
                             <a href="https://github.com/simone188535/react-todo-list" target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary">View on GitHub</Button>
+                            </a>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+            <Row className="mt-md-5">
+            <Col md={4} className="offset-md-4">
+                    <Card className="mb-5 mb-md-0">
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/pokedex.png" alt="Simple React Todo List" />
+                        <Card.Body>
+                            <Card.Title>Pokedex</Card.Title>
+                            <Card.Text>
+                            This is a pokedex built using React and Redux. It pulls data using axios, and displays it.
+                            </Card.Text>
+                            
+                            <a href="https://github.com/simone188535/pokedex" target="_blank" rel="noopener noreferrer">
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
