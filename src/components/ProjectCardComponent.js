@@ -105,7 +105,9 @@ const ProjectCardComponent = () => {
                             <Card.Text>
                             This is an application that demonstrates my ability to uses React and Redux.
                             </Card.Text>
-                            
+                            <a href="https://todo.simoneanthony.com/" target="_blank" rel="noopener noreferrer"  className="mr-3">
+                                <Button className="viewButton">View Here</Button>
+                            </a>
                             <a href="https://github.com/simone188535/react-todo-list" target="_blank" rel="noopener noreferrer">
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
