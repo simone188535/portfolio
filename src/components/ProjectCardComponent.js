@@ -116,7 +116,7 @@ const ProjectCardComponent = () => {
                 </Col>
             </Row>
             <Row className="mt-md-5">
-            <Col md={4} className="offset-md-4">
+                <Col md={4} className="offset-md-2">
                     <Card className="mb-5 mb-md-0">
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/pokedex.png" alt="Simple React Todo List" />
                         <Card.Body>
@@ -128,6 +128,23 @@ const ProjectCardComponent = () => {
                                 <Button className="viewButton">View Here</Button>
                             </a>
                             <a href="https://github.com/simone188535/pokedex" target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary">View on GitHub</Button>
+                            </a>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={4} >
+                    <Card className="mb-5 mb-md-0">
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/react-calc.png" alt="React Calculator" />
+                        <Card.Body>
+                            <Card.Title>React Calculator</Card.Title>
+                            <Card.Text>
+                            This is a calculator built in React. 
+                            </Card.Text>
+                            <a href="https://react-calculator.simoneanthony.com/" target="_blank" rel="noopener noreferrer"  className="mr-3">
+                                <Button className="viewButton">View Here</Button>
+                            </a>
+                            <a href="https://github.com/simone188535/react-calculator" target="_blank" rel="noopener noreferrer">
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
