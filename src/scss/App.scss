@@ -762,6 +762,11 @@ html, body {
                     font-size: 6rem;
                 }
             }
+        .project-section{
+            .card{
+                min-height: 320px;
+            }
+        }
         }
 
         .contact {

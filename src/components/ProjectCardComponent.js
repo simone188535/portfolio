@@ -116,7 +116,7 @@ const ProjectCardComponent = () => {
                 </Col>
             </Row>
             <Row className="mt-md-5">
-                <Col md={4} className="offset-md-2">
+                <Col md={4} >
                     <Card className="mb-5 mb-md-0">
                         <Card.Img variant="top" className="img-fluid" src="/images/projects/pokedex.png" alt="Simple React Todo List" />
                         <Card.Body>
@@ -139,12 +139,29 @@ const ProjectCardComponent = () => {
                         <Card.Body>
                             <Card.Title>React Calculator</Card.Title>
                             <Card.Text>
-                            This is a calculator built in React. 
+                            This is a calculator built in React. It uses an npm install named Math.js.
                             </Card.Text>
                             <a href="https://react-calculator.simoneanthony.com/" target="_blank" rel="noopener noreferrer"  className="mr-3">
                                 <Button className="viewButton">View Here</Button>
                             </a>
                             <a href="https://github.com/simone188535/react-calculator" target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary">View on GitHub</Button>
+                            </a>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={4} >
+                    <Card className="mb-5 mb-md-0">
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/ds-and-a.png" alt="Data Structure and Algorithms" />
+                        <Card.Body>
+                            <Card.Title>Data Structure and Algorithms</Card.Title>
+                            <Card.Text>
+                            This is a blog started to represent my knowledge of Data Structure and Algorithms. 
+                            </Card.Text>
+                            <a href="https://datastructures-and-algorithms.simoneanthony.com/" target="_blank" rel="noopener noreferrer"  className="mr-3">
+                                <Button className="viewButton">View Here</Button>
+                            </a>
+                            <a href="https://github.com/simone188535/data-structure-and-algorithms-blog" target="_blank" rel="noopener noreferrer">
                                 <Button variant="secondary">View on GitHub</Button>
                             </a>
                         </Card.Body>
