@@ -4,8 +4,8 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 class GlobalNav extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             navBackground: 'nav-background-light'
         }
