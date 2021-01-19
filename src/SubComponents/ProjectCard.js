@@ -168,6 +168,36 @@ const ProjectCard = () => {
                     </Card>
                 </Col>
             </Row>
+            <Row className="mt-md-5">
+                <Col md={{ span: 4, offset: 2 }} >
+                    <Card className="mb-5 mb-md-0">
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/bluestonecomics.png" alt="Simple React Todo List" />
+                        <Card.Body>
+                            <Card.Title>Bluestone Comics</Card.Title>
+                            <Card.Text>
+                                MERN Stack Project using React v16 w/ hooks and functional components. A work in progress. 
+                            </Card.Text>
+                            <a href="https://github.com/simone188535/bluestone-comics" target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary">View on GitHub</Button>
+                            </a>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={4} >
+                    <Card className="mb-5 mb-md-0">
+                        <Card.Img variant="top" className="img-fluid" src="/images/projects/hacker-news-api.png" alt="React Calculator" />
+                        <Card.Body>
+                            <Card.Title>Hacker News API</Card.Title>
+                            <Card.Text>
+                            Uses Hacker News API. Uses Faux login system and allows user to select a favorite story. React v16. Team Project.
+                            </Card.Text>
+                            <a href="https://github.com/Jagbenu1/venu_exercise" target="_blank" rel="noopener noreferrer">
+                                <Button variant="secondary">View on GitHub</Button>
+                            </a>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
         </div>
     );
 }

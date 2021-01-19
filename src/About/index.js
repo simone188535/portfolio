@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import SubHead from '../components/SubHead';
-import PDFDisplayButton from '../components/PDFDisplayButton';
+import SubHead from '../SubComponents/SubHead';
+import PDFDisplayButton from '../SubComponents/PDFDisplayButton';
 
 import aboutHeroAnimationLeft from '../js/about/aboutHeroAnimationLeft';
 import aboutHeroAnimationRight from '../js/about/aboutHeroAnimationRight';
