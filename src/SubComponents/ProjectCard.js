@@ -3,7 +3,7 @@ import { Row, Col, Card, Button } from 'react-bootstrap';
 // import ProjectArray from '../js/props-objects/project-props';
 // import _ from 'lodash';
 
-const ProjectCardComponent = () => {
+const ProjectCard = () => {
 
     return (
         <div>
@@ -172,4 +172,4 @@ const ProjectCardComponent = () => {
     );
 }
 
-export default ProjectCardComponent;
+export default ProjectCard;

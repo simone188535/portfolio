@@ -4,9 +4,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import { workHeroAnimation } from '../js/work/workHeroAnimation';
 import { isInViewport } from '../js/isInViewport';
-import SubHeadComponent from '../components/SubHeadComponent';
-import ProjectCardComponent from '../components/ProjectCardComponent'; 
-import ClientCardContainerComponent from '../components/ClientCardContainerComponent';
+import SubHeadComponent from '../SubComponents/SubHead';
+import ProjectCard from '../SubComponents/ProjectCard'; 
+import ClientCardContainer from '../SubComponents/ClientCardContainer';
 
 
 const Work = () => {
@@ -60,13 +60,13 @@ const Work = () => {
                 <SubHeadComponent {...projectTrigger} />
                 <Row>
                     <Container className="project-section">
-                    <ProjectCardComponent/>
+                    <ProjectCard/>
                     </Container>
                 </Row>
                 <SubHeadComponent {...workTrigger} />
                 <Row>
                     <Container>
-                        <ClientCardContainerComponent ident="work-card-container" />
+                        <ClientCardContainer ident="work-card-container" />
                     </Container>
                 </Row>
             </Container>

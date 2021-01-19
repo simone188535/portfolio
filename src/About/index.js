@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import $ from 'jquery';
 import { isInViewport } from '../js/isInViewport';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import SubHeadComponent from '../components/SubHeadComponent';
-import PDFDisplayButtonComponent from '../components/PDFDisplayButtonComponent';
+import SubHead from '../components/SubHead';
+import PDFDisplayButton from '../components/PDFDisplayButton';
 
 import aboutHeroAnimationLeft from '../js/about/aboutHeroAnimationLeft';
 import aboutHeroAnimationRight from '../js/about/aboutHeroAnimationRight';
@@ -48,8 +48,6 @@ const About = () => {
     useEffect(() => {
         allAnimation();
         window.addEventListener('scroll', allAnimation);
-        // console.log('active');
-
     });
 
     return (
@@ -87,8 +85,8 @@ const About = () => {
             </Container>
             <Container>
                 <div className="resume-section">
-                    <SubHeadComponent {...AboutTrigger} />
-                    <PDFDisplayButtonComponent />
+                    <SubHead {...AboutTrigger} />
+                    <PDFDisplayButton />
                 </div>
                 <div id="about-me-trigger" className="about-me">
 
@@ -111,7 +109,7 @@ const About = () => {
             </Container>
             <Container fluid={true} className="bg-red-orange">
                 <div className="aspiration-section">
-                    <SubHeadComponent {...AboutTrigger2} />
+                    <SubHead {...AboutTrigger2} />
                     <Row>
                         <Col  className="aspiration-container">
                             <ul className="aspiration-list">

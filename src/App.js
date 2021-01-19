@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Homepage from './Homepage';
-import Work from './work/Work';
-import About from './about/About';
-import Contact from './contact/Contact';
+import Work from './Work';
+import About from './About';
+import Contact from './Contact';
 import GlobalNav from './GlobalNav';
-import GlobalFooter from './GlobalFooter';
+import GlobalFooter from './Footer';
 
 
 import './scss/App.scss';

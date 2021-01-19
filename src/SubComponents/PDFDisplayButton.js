@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Pdf from '../documents/Resume.pdf';
 
-class PDFDisplayButtonComponent extends Component {
+class PDFDisplayButton extends Component {
   render() {
     return (
       <div className="row">
@@ -18,4 +18,4 @@ class PDFDisplayButtonComponent extends Component {
 
 }
 
-export default PDFDisplayButtonComponent;
+export default PDFDisplayButton;

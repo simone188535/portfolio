@@ -6,7 +6,7 @@ import { isInViewport } from '../js/isInViewport';
 import { TweenMax } from "gsap/TweenMax";
 
 //this component controls the subhead component and animation
-const SubHeadComponent = (props) => {
+const SubHead = (props) => {
 
     let { ident, text } = props;
 
@@ -17,7 +17,6 @@ const SubHeadComponent = (props) => {
         if (isInViewport($(ident))) {
 
             return TweenMax.to($(ident), 1.8, { y: 20, opacity: 1 });
-            // console.log('is active');
 
         }
     };
@@ -43,4 +42,4 @@ const SubHeadComponent = (props) => {
         </Row>);
 }
 
-export default SubHeadComponent;
+export default SubHead;

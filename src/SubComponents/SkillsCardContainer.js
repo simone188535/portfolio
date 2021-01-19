@@ -8,7 +8,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import skillsArray from '../js/props-objects/skills-props';
 
 
-const SkillsCardContainerComponent = (props) => {
+const SkillsCardContainer = (props) => {
 
     let { ident } = props;
 
@@ -16,8 +16,6 @@ const SkillsCardContainerComponent = (props) => {
 
         const results = _.map(arrayValue, (arrayIndex) => {
             return (
-                //    console.log(arrayIndex);
-
                 <Col xs={6} md={3} key={arrayIndex.id}>
                     <Card>
                         <Card.Img variant="top" className="img-fluid w-100" src={arrayIndex.img} alt={arrayIndex.alt} />
@@ -33,8 +31,6 @@ const SkillsCardContainerComponent = (props) => {
         return results;
     }
     const staggerCards = (ident) => {
-
-        // const tl = new TimelineLite();
 
         //only activates in Viewpoint when parent Id (ident) is correct.
         //It uses css selector syntax to determine which card section  should be selected
@@ -64,4 +60,4 @@ const SkillsCardContainerComponent = (props) => {
         </div>
     );
 }
-export default SkillsCardContainerComponent;
+export default SkillsCardContainer;

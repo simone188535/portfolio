@@ -8,8 +8,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { heroRightAnimation } from './js/home/heroRightAnimation';
 import { heroLeftAnimation } from './js/home/heroLeftAnimation';
 import { isInViewport } from './js/isInViewport';
-import SubHeadComponent from './components/SubHeadComponent';
-import SkillsCardContainerComponent from './components/SkillsCardContainerComponent';
+import SubHead from './components/SubHead';
+import SkillsCardContainer from './components/SkillsCardContainer';
 
 
 
@@ -81,8 +81,8 @@ const Homepage = () => {
 
                 </Row>
                 <div className="section-second">
-                    <SubHeadComponent {...SubHeadTrigger} />
-                    <SkillsCardContainerComponent ident="first-card-container" />
+                    <SubHead {...SubHeadTrigger} />
+                    <SkillsCardContainer ident="first-card-container" />
 
                 </div>
 

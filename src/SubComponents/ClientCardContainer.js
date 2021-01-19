@@ -4,8 +4,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 
 import clientsArray from '../js/props-objects/client-props';
 
-const CardContainerComponent = (props) => {
-    // let { ident } = props;
+const CardContainer = (props) => {
     const makeCard = (arrayValue) => {
 
         const results = _.map(arrayValue, (arrayIndex) => {
@@ -37,4 +36,4 @@ const CardContainerComponent = (props) => {
 
         </div>);
 }
-export default CardContainerComponent;
+export default CardContainer;
